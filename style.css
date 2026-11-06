@@ -104,3 +104,7 @@ footer p { margin: 4px auto; max-width: 900px; }
   h2 { font-size: 24px; }
   main { padding: 12px 16px 24px; }
 }
+
+/* CC 2026-11-06: players on now */
+td.pl { text-align: center; min-width: 64px; }
+td.pl .on { color: var(--green); font-size: 15px; text-shadow: 0 0 6px rgba(93,255,143,.5); }

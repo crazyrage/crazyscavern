@@ -1,0 +1,33 @@
+# Server status for the website (CC 2026-11-06; copied to .github/workflows/status.yml by build_site.py).
+# Every 5 minutes (GitHub may run it late): ask each game server how many people are on and publish status.json on
+# the "status" branch (one commit, force-pushed, so the branch never grows). The pages read it from there. Pushes to
+# "status" don't rebuild the website. No secrets: the job's own token can only write to this repo.
+# GitHub turns scheduled jobs off after 60 days without repo activity: publishing the site again counts.
+name: server status
+on:
+  schedule:
+    - cron: "*/5 * * * *"
+  workflow_dispatch:
+  push:
+    branches: [main]
+permissions:
+  contents: write
+concurrency:
+  group: status
+  cancel-in-progress: true
+jobs:
+  status:
+    runs-on: ubuntu-latest
+    timeout-minutes: 3
+    steps:
+      - name: Ask the game servers
+        run: |
+          git clone -q --depth 1 "https://github.com/${GITHUB_REPOSITORY}.git" site
+          python3 site/status/check.py site/status/servers.json status.json
+      - name: Publish status.json on the status branch
+        run: |
+          mkdir pub && cp status.json pub/ && cd pub
+          git init -q -b status
+          git add status.json
+          git -c user.name="status bot" -c user.email="41898282+github-actions[bot]@users.noreply.github.com" commit -q -m "Server status"
+          git push -q -f "https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${GITHUB_REPOSITORY}.git" status

@@ -1,3 +1,4 @@
 User-agent: *
 Disallow: /join/
+Disallow: /status/
 Sitemap: https://crazyrage.github.io/crazyscavern/sitemap.xml

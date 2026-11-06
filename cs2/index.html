@@ -25,8 +25,9 @@
 <p class="lead">&gt; Respawn deathmatch with 22 races and 20 evolutions. The bots play SourceCraft too: they have races, levels, items and ultimates.</p>
 <h2>&gt;&gt; SERVERS</h2>
 <p class="dim">CS2 keeps its own levels.</p>
-<div class="scroll"><table class="servers"><thead><tr><th>server</th><th>address</th><th>what it is</th><th>levels</th><th></th></tr></thead><tbody>
-<tr><td><b>CS2 EU</b></td><td><code>77.90.8.150:27016</code> <button class="copy" type="button" data-addr="77.90.8.150:27016" title="Copy the connect line">copy</button></td><td>Respawn deathmatch; the bots play SourceCraft too</td><td class="dim">its own</td><td><a class="btn" href="steam://connect/77.90.8.150:27016">join</a> <a class="dim small" href="../join/cs2-eu.html" title="A link that joins this server (for posts and chat)">link</a></td></tr>
+<p class="dim small" data-status-note>on now = people on the server, bots not counted.</p>
+<div class="scroll"><table class="servers"><thead><tr><th>server</th><th title="People on the server now (bots not counted)">on now</th><th>address</th><th>what it is</th><th>levels</th><th></th></tr></thead><tbody>
+<tr><td><b>CS2 EU</b></td><td class="pl" data-sid="cs2-eu"><span class="dim">...</span></td><td><code>77.90.8.150:27016</code> <button class="copy" type="button" data-addr="77.90.8.150:27016" title="Copy the connect line">copy</button></td><td>Respawn deathmatch; the bots play SourceCraft too</td><td class="dim">its own</td><td><a class="btn" href="steam://connect/77.90.8.150:27016">join</a> <a class="dim small" href="../join/cs2-eu.html" title="A link that joins this server (for posts and chat)">link</a></td></tr>
 </tbody></table></div>
 <div class="guide">
 <p>Warcraft and StarCraft races in Counter-Strike 2. Pick a race, level it up with kills, spend skill points on its skills and ultimates, and buy items with the crystals you earn.</p>
@@ -581,5 +582,36 @@ document.querySelectorAll('button.copy').forEach(function (b) {
     }, function () { window.prompt('Copy this, then paste it in the game console (~):', t); });
   });
 });
+// CC 2026-11-06: players on now (people, not bots), from status.json that a GitHub job writes every 5 minutes
+(function () {
+  var cells = document.querySelectorAll('td.pl[data-sid]');
+  if (!cells.length) return;
+  var API = 'https://api.github.com/repos/crazyrage/crazyscavern/contents/status.json?ref=status';
+  var RAW = 'https://raw.githubusercontent.com/crazyrage/crazyscavern/status/status.json';
+  function show(doc) {
+    var age = Math.max(0, Math.round((Date.now() - Date.parse(doc.updated)) / 60000));
+    cells.forEach(function (c) {
+      var s = doc.servers[c.dataset.sid];
+      if (!s) { c.textContent = '-'; return; }
+      if (!s.ok) { c.innerHTML = '<span class="dim" title="No answer at the last check (changing map?)">no reply</span>'; return; }
+      c.innerHTML = s.humans > 0 ? '<b class="on">' + s.humans + '</b>' : '<span class="dim">0</span>';
+      c.title = s.humans + ' of ' + s.max + ' slots, map ' + s.map;
+    });
+    document.querySelectorAll('[data-status-note]').forEach(function (n) {
+      n.textContent = 'on now = people, bots not counted. Checked ' + (age < 1 ? 'just now' : age + ' min ago') +
+        (age > 30 ? ' (the check is running late)' : '') + '; refreshes every 5 minutes.';
+    });
+  }
+  function load() {
+    fetch(API, { cache: 'no-store' })
+      .then(function (r) { if (!r.ok) throw r.status; return r.json(); })
+      .then(function (j) { return JSON.parse(atob(j.content)); })
+      .catch(function () { return fetch(RAW + '?t=' + Date.now()).then(function (r) { return r.json(); }); })
+      .then(show)
+      .catch(function () { cells.forEach(function (c) { c.textContent = '-'; }); });
+  }
+  load();
+  setInterval(load, 120000);
+})();
 </script>
 </body></html>
