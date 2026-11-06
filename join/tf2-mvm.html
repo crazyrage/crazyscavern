@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Join TF2 MvM - Crazy&#x27;s Cavern SourceCraft</title>
+<meta name="description" content="One click to join TF2 MvM (Your races vs robots, co-op (Advanced + Expert)), a SourceCraft RPG server at 148.113.183.190:27016.">
+<link rel="canonical" href="https://crazyrage.github.io/crazyscavern/join/tf2-mvm.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Crazy's Cavern">
+<meta property="og:title" content="Join TF2 MvM - Crazy&#x27;s Cavern SourceCraft">
+<meta property="og:description" content="One click to join TF2 MvM (Your races vs robots, co-op (Advanced + Expert)), a SourceCraft RPG server at 148.113.183.190:27016.">
+<meta property="og:url" content="https://crazyrage.github.io/crazyscavern/join/tf2-mvm.html">
+<meta name="theme-color" content="#1c1f1d">
+<link rel="icon" href="../favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600&family=VT323&display=swap">
+<link rel="stylesheet" href="../style.css">
+</head><body>
+<header class="term">
+  <div class="bar"><span class="lights" aria-hidden="true"><i></i><i></i><i></i></span><span class="prompt">crazyscavern@sourcecraft:~/join/tf2-mvm.html</span></div>
+  <nav><a href="../index.html">home</a><a href="../index.html#servers" class=on>servers</a><a href="../tf2/">tf2</a><a href="../cs2/">cs2</a><a href="../l4d2/">l4d2</a><a href="https://steamcommunity.com/groups/crazyscavern" rel="noopener">steam group</a></nav>
+</header>
+<main>
+<section class="join"><h1>TF2 MvM</h1><p class="lead">&gt; Opening Steam to join <b>TF2 MvM</b> (Your races vs robots, co-op (Advanced + Expert))...</p><p><a class="btn big" href="steam://connect/148.113.183.190:27016">join now</a></p><p>Nothing happened? Open the Team Fortress 2 console (<code>~</code>) and type<br><code>connect 148.113.183.190:27016</code> <button class="copy" type="button" data-addr="148.113.183.190:27016">copy</button></p><p><a href="../tf2/">TF2 guide</a> &middot; <a href="../index.html#servers">all servers</a></p></section><script>setTimeout(function () { window.location.href = "steam://connect/148.113.183.190:27016"; }, 300);</script>
+</main>
+<footer>
+  <p>Crazy's Cavern &middot; community game servers &middot; <a href="https://steamcommunity.com/groups/crazyscavern" rel="noopener">Steam group</a></p>
+  <p class="dim">SourceCraft is a fan-made mod. StarCraft and Warcraft are trademarks of Blizzard Entertainment; Team Fortress 2, Counter-Strike 2 and Left 4 Dead 2 are Valve's. Not affiliated with either.</p>
+</footer>
+<script>
+document.querySelectorAll('button.copy').forEach(function (b) {
+  b.addEventListener('click', function () {
+    var t = 'connect ' + b.dataset.addr;
+    (navigator.clipboard ? navigator.clipboard.writeText(t) : Promise.reject()).then(function () {
+      b.textContent = 'copied'; setTimeout(function () { b.textContent = 'copy'; }, 1500);
+    }, function () { window.prompt('Copy this, then paste it in the game console (~):', t); });
+  });
+});
+</script>
+</body></html>

@@ -1,0 +1,585 @@
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SourceCraft CS2 - player guide and servers | Crazy&#x27;s Cavern</title>
+<meta name="description" content="SourceCraft RPG mod for Counter-Strike 2: Respawn deathmatch with 22 races and 20 evolutions. The bots play SourceCraft too: they have races, levels, items and ultimates. Servers, commands, races and the shop.">
+<link rel="canonical" href="https://crazyrage.github.io/crazyscavern/cs2/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Crazy's Cavern">
+<meta property="og:title" content="SourceCraft CS2 - player guide and servers | Crazy&#x27;s Cavern">
+<meta property="og:description" content="SourceCraft RPG mod for Counter-Strike 2: Respawn deathmatch with 22 races and 20 evolutions. The bots play SourceCraft too: they have races, levels, items and ultimates. Servers, commands, races and the shop.">
+<meta property="og:url" content="https://crazyrage.github.io/crazyscavern/cs2/">
+<meta name="theme-color" content="#1c1f1d">
+<link rel="icon" href="../favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600&family=VT323&display=swap">
+<link rel="stylesheet" href="../style.css">
+</head><body>
+<header class="term">
+  <div class="bar"><span class="lights" aria-hidden="true"><i></i><i></i><i></i></span><span class="prompt">crazyscavern@sourcecraft:~/cs2/</span></div>
+  <nav><a href="../index.html">home</a><a href="../index.html#servers">servers</a><a href="../tf2/">tf2</a><a href="../cs2/" class=on>cs2</a><a href="../l4d2/">l4d2</a><a href="https://steamcommunity.com/groups/crazyscavern" rel="noopener">steam group</a></nav>
+</header>
+<main>
+<h1>SourceCraft for Counter-Strike 2</h1>
+<p class="lead">&gt; Respawn deathmatch with 22 races and 20 evolutions. The bots play SourceCraft too: they have races, levels, items and ultimates.</p>
+<h2>&gt;&gt; SERVERS</h2>
+<p class="dim">CS2 keeps its own levels.</p>
+<div class="scroll"><table class="servers"><thead><tr><th>server</th><th>address</th><th>what it is</th><th>levels</th><th></th></tr></thead><tbody>
+<tr><td><b>CS2 EU</b></td><td><code>77.90.8.150:27016</code> <button class="copy" type="button" data-addr="77.90.8.150:27016" title="Copy the connect line">copy</button></td><td>Respawn deathmatch; the bots play SourceCraft too</td><td class="dim">its own</td><td><a class="btn" href="steam://connect/77.90.8.150:27016">join</a> <a class="dim small" href="../join/cs2-eu.html" title="A link that joins this server (for posts and chat)">link</a></td></tr>
+</tbody></table></div>
+<div class="guide">
+<p>Warcraft and StarCraft races in Counter-Strike 2. Pick a race, level it up with kills, spend skill points on its skills and ultimates, and buy items with the crystals you earn.</p>
+<p><b>Server:</b> Crazy's Cavern | SourceCraft CS2, <code>connect 77.90.8.150:27016</code> (respawn deathmatch, 30-minute maps, 5 Expert bots per team around the clock).</p>
+<p>Progress here is separate from the TF2 SourceCraft servers. Steam group: steamcommunity.com/groups/crazyscavern</p>
+<h2>Getting started</h2>
+<ol>
+<li>Join. Your first time, you start as one of the four classic races at random (Human Alliance, Orcish Horde, Night Elf or Undead Scourge; all four are open to everyone). Type <code>!race</code> to pick another (factions with several races open a second page). You also start with 50 crystals.
+<li>Your first kill on a race takes it to level 1. After that, kills earn XP. Every race level gives one skill point. The skills menu opens by itself when you next respawn (or type <code>!skills</code>).
+<li>At race level 8 you can learn an ultimate. Bind keys for them (below).
+<li>Kills also pay crystals: type <code>!shop</code> to buy items for this life.
+</ol>
+<p><b>Menus</b> appear in the middle of the screen: <b>W/S</b> to move, <b>D</b> to pick, <b>A</b> to go back, <b>Tab</b> to close. You can't move while a menu is open (you can still look around); shooting closes it, and so does getting shot. The line under the options explains the highlighted one (what a skill or item does, or why it's greyed out).</p>
+<h2>Commands</h2>
+<p>Type these in chat, starting with <code>!</code> (plain words are ordinary chat).</p>
+<div class="scroll"><table>
+<tr><th>Chat</th><th>What it does</th></tr>
+<tr><td><code>!menu</code></td><td>Main menu: change race, skills, shop, race info, stats, commands, readout on/off</td></tr>
+<tr><td><code>!race</code> / <code>!changerace</code></td><td>Pick a race (takes effect when you respawn if you're alive)</td></tr>
+<tr><td><code>!skills</code> / <code>!upgrades</code></td><td>Spend skill points</td></tr>
+<tr><td><code>!resetskills</code></td><td>Take back every point on your race to spend again (also at the end of <code>!skills</code>)</td></tr>
+<tr><td><code>!raceinfo</code></td><td>Your race's skills: highlight one to read what it does and its ultimate key</td></tr>
+<tr><td><code>!shop</code> / <code>!shopmenu</code></td><td>Buy items</td></tr>
+<tr><td><code>!showxp</code> / <code>!stats</code></td><td>Level, XP, energy, crystals, vespene (in chat)</td></tr>
+<tr><td><code>!mine</code></td><td>Plant a mine you bought</td></tr>
+<tr><td><code>!tripmine</code></td><td>Put a tripmine on the wall you face</td></tr>
+<tr><td><code>!hud</code></td><td>Turn the readout under your crosshair off or on</td></tr>
+<tr><td><code>!servers</code></td><td>Every Crazy's Cavern server (CS2, TF2 and L4D2) and how to join it; also in <code>!menu</code></td></tr>
+<tr><td><code>!guide</code></td><td>The link to this guide</td></tr>
+<tr><td><code>!group</code></td><td>The Crazy's Cavern Steam group link</td></tr>
+<tr><td><code>!donate</code></td><td>How to support the server</td></tr>
+</table></div>
+<p><b>Binds</b> (paste into the console (~) once; pick other keys if you use these). Ultimates in one line (the server shows it when ultimates unlock at level 8, and <code>!menu</code> &gt; Commands and binds prints it in your console to copy):</p>
+<pre>bind z css_ultimate1; bind x css_ultimate2; bind c css_ultimate3; bind v css_ultimate4</pre>
+<p>Mines (shop items):</p>
+<pre>bind m css_mine; bind n css_tripmine</pre>
+<p>No console? Turn it on in Settings &gt; Game &gt; Enable Developer Console.</p>
+<p>The readout under your crosshair shows race and level, XP, unspent points, energy (banked energy in brackets), fuel for flying races, and crystals.</p>
+<h2>How it works</h2>
+<h3>Respawn mode</h3>
+<p>You respawn right away with 2 seconds of spawn protection. You can buy CS2 weapons anywhere, at any time; everyone starts with $800. No bomb; each map lasts 30 minutes, then the next one in the rotation loads (chat warns you a minute before; your progress is saved). Teams auto-balance.</p>
+<h3>Bots</h3>
+<p>Each team has 5 bots (CS2's Expert difficulty), and they play SourceCraft too:</p>
+<ul>
+<li><b>Every bot has a race</b>, any race, including ones you haven't unlocked yet.
+<li><b>Their level changes every life</b>, from a quarter of the race's max up to max, mostly on the low side: most bots are half-built, a few are fully built. Their skill points are already spent.
+<li>From race level 8 they <b>use their ultimates</b> (never the ones that transform them).
+<li>They <b>buy one shop item each life</b>, but carry no crystals, so there's nothing to loot from them.
+</ul>
+<h3>XP and levels</h3>
+<ul>
+<li><b>Kills:</b> XP by the victim's race level (6 XP at level 0 up to 100 at level 16), plus 1 per overall level they're above you. <b>Headshot +10, knife kill +20, assist +10.</b>
+<li><b>Bots</b> are worth the same as a kill on a player at your own level.
+<li>XP and crystals count once at least <b>2 players</b> are on the server; bots count, so you can level against bots alone.
+<li>Each race level needs more XP than the last: 100 for level 1, then 200, 400, 800, 1,600, 3,200, 6,400, 12,800 (level 8), 25,600, 51,200, then +10,000 more for each level after.
+<li><b>Skill points:</b> one per race level. A new point takes effect at your next spawn. Leveling up shows a reminder; nothing pops up in the middle of a fight.
+<li>A race's <b>max level</b> is the total of its skills' max levels.
+<li><b>Overall level</b> is all your race levels added together. It unlocks more races:
+</ul>
+<div class="scroll"><table>
+<tr><th>Overall level</th><th>Races unlocked</th></tr>
+<tr><td>0</td><td>Human Alliance, Night Elf, Orcish Horde, Undead Scourge</td></tr>
+<tr><td>16</td><td>Protoss Zealot, Terran Marine, UAW, Zergling</td></tr>
+<tr><td>32</td><td>Protoss Chimera, Terran Ghost, Terran Medic, Terran Vulture, Zerg Omegalisk, Zerg Overlord</td></tr>
+<tr><td>48</td><td>Protoss High Templar, Terran Reaper, Zerg Defiler, Zerg Hydralisk</td></tr>
+<tr><td>64</td><td>Protoss Dark Templar, Protoss Phoenix</td></tr>
+<tr><td>100</td><td>Zerg Queen</td></tr>
+</table></div>
+<h3>Skills and ultimates</h3>
+<ul>
+<li><b>Passive skills</b> work on their own once you put points in them.
+<li><b>Ultimates</b> are used with <code>css_ultimate1</code> to <code>css_ultimate4</code> (bind them). They need race level 8 unless the race list says otherwise.
+<li><b>One ultimate per slot:</b> some races offer two ultimates on the same key; you can learn only one of them.
+<li>Cooldowns keep running while you're dead, so dying doesn't reset them.
+</ul>
+<h3>Energy</h3>
+<ul>
+<li>You spawn with your race's starting energy (usually 30) and gain 1 per second, up to its max (usually 100).
+<li>Ultimates and some passives cost energy.
+<li><b>Banked energy:</b> when you die, energy above your race's starting amount is banked for that race (up to 1,000; shown in brackets on the readout). Some big ultimates can draw from it.
+</ul>
+<h3>Evolutions</h3>
+<p>Some ultimates turn you into another race until you die (Zealot into Dragoon, Marine into Firebat, and so on). An evolution has its own levels and skill points; when you die you are back to your normal race. Evolutions aren't in the race menu: you reach them through their parent race. There are 21 races to pick and 15 evolutions.</p>
+<h3>Crystals, vespene and the shop</h3>
+<ul>
+<li><b>Crystals:</b> 2 per kill or assist (you can hold up to 100).
+<li><b>Vespene:</b> 1 per kill (up to 5,000); a few items and skills cost it.
+<li><b>Items last until you die.</b> An Ankh of Reincarnation brings them back once. Items aren't kept when you leave the server; crystals and vespene are.
+</ul>
+<h2>Differences from TF2 SourceCraft</h2>
+<ul>
+<li><b>No classes:</b> every race works with any CS2 weapon.
+<li><b>Everyone has 100 HP</b>, so flat skill damage from TF2 (Chain Lightning, Suicide Bomber...) is scaled down.
+<li>Some skills were rebuilt for CS2: Firebat is built around molotovs, Vulture throws real grenades, Reaver scarabs and mines are custom.
+<li><b>Not ported:</b> the building races (Protoss Probe, Phase Prism, Carrier; Zerg Drone, Hive Queen) and Zerg Lurker. A few skills that needed TF2 (Uber charges, boss summons, mind control...) were cut.
+</ul>
+<h2>Shop (44 items)</h2>
+<p><b>Protective</b></p>
+<div class="scroll"><table>
+<tr><th>Item</th><th>Cost</th><th>Max</th><th>What it does</th></tr>
+<tr><td>Blinders</td><td>free</td><td>1</td><td>Hallucinations become plain blindness.</td></tr>
+<tr><td>Ankh of Reincarnation</td><td>60 crystals + 2 vespene</td><td>1</td><td>If you die, you get your shop items back next life.</td></tr>
+<tr><td>Necklace of Immunity</td><td>15 crystals</td><td>1</td><td>Immune to enemy ultimates.</td></tr>
+<tr><td>Flack Jacket</td><td>10 crystals</td><td>1</td><td>Immune to explosives.</td></tr>
+<tr><td>Antibiotic</td><td>5 crystals</td><td>10</td><td>Cures (or prevents one) infection.</td></tr>
+<tr><td>Antivenom</td><td>30 crystals</td><td>1</td><td>Cures and prevents poisoning.</td></tr>
+<tr><td>Antirad</td><td>30 crystals</td><td>1</td><td>Cures and prevents radiation.</td></tr>
+<tr><td>Antidote</td><td>60 crystals</td><td>1</td><td>Cures and prevents infection, radiation and poison.</td></tr>
+<tr><td>Potion of Restoration</td><td>75 crystals</td><td>10</td><td>Cures slows and roots; nothing can slow you for 10 seconds.</td></tr>
+<tr><td>Goggles</td><td>10 crystals</td><td>1</td><td>Immune to blindness and hallucinations.</td></tr>
+<tr><td>Lubricant</td><td>30 crystals</td><td>1</td><td>Nothing can slow or root you.</td></tr>
+<tr><td>Lockbox</td><td>10 crystals</td><td>1</td><td>Your crystals can't be looted.</td></tr>
+<tr><td>Mole Protection</td><td>15 crystals</td><td>1</td><td>Shrugs off some damage from enemy moles.</td></tr>
+<tr><td>Mole Reflection</td><td>35 crystals</td><td>1</td><td>Reflects some damage back at enemy moles.</td></tr>
+<tr><td>Mole Retention</td><td>15 crystals</td><td>1</td><td>Keep Mole Protection/Reflection after you die.</td></tr>
+</table></div>
+<p><b>Defensive</b></p>
+<div class="scroll"><table>
+<tr><th>Item</th><th>Cost</th><th>Max</th><th>What it does</th></tr>
+<tr><td>Cloak of Shadows</td><td>25 crystals</td><td>1</td><td>Nearly invisible while standing still with your knife out.</td></tr>
+<tr><td>Cloak of Darkness</td><td>15 crystals</td><td>1</td><td>Immune to detection.</td></tr>
+<tr><td>Mask of Death</td><td>10 crystals</td><td>1</td><td>Heal 2 HP on every hit you land.</td></tr>
+<tr><td>Helm of the Black Legion</td><td>15 crystals</td><td>1</td><td>Headshots only do body-shot damage to you.</td></tr>
+</table></div>
+<p><b>Combative</b></p>
+<div class="scroll"><table>
+<tr><th>Item</th><th>Cost</th><th>Max</th><th>What it does</th></tr>
+<tr><td>Claws of Attack</td><td>60 crystals</td><td>1</td><td>Every hit does up to 8 extra damage.</td></tr>
+<tr><td>Orb of Frost</td><td>40 crystals</td><td>1</td><td>Enemies you hit are slowed to half speed for 5s.</td></tr>
+<tr><td>Orb of Fire</td><td>55 crystals</td><td>1</td><td>Enemies you hit burn for 5s (once every 10s each).</td></tr>
+<tr><td>Silver Ammo</td><td>20 crystals</td><td>1</td><td>Enemies you kill can't reincarnate.</td></tr>
+<tr><td>Silver Ankh</td><td>30 crystals</td><td>1</td><td>Silver Ammo that you keep until it stops a reincarnation.</td></tr>
+<tr><td>Sack of Looting</td><td>65 crystals</td><td>1</td><td>55-85% chance to loot 25-50% of a victim's crystals (better with the knife).</td></tr>
+<tr><td>Mole</td><td>75 crystals</td><td>1</td><td>Next spawn, tunnel into the enemy spawn.</td></tr>
+<tr><td>Mine</td><td>35 crystals</td><td>5</td><td>A proximity mine to plant (type 'mine'). Up to 5.</td></tr>
+<tr><td>Tripmine</td><td>60 crystals + 5 vespene</td><td>5</td><td>A laser tripmine for a wall (type 'tripmine'). Up to 5.</td></tr>
+<tr><td>Flaming Gloves of Warmth</td><td>65 crystals + 25 vespene</td><td>1</td><td>A fresh HE grenade every 20 seconds.</td></tr>
+</table></div>
+<p><b>Enhancement</b></p>
+<div class="scroll"><table>
+<tr><th>Item</th><th>Cost</th><th>Max</th><th>What it does</th></tr>
+<tr><td>Boots of Speed</td><td>55 crystals</td><td>1</td><td>Run 20% faster.</td></tr>
+<tr><td>Sock of the Feather</td><td>45 crystals</td><td>1</td><td>Half gravity: jump much higher.</td></tr>
+<tr><td>Periapt of Health</td><td>40 crystals</td><td>1</td><td>+50 max health.</td></tr>
+<tr><td>Ring of Regeneration +1</td><td>15 crystals</td><td>1</td><td>Regenerate 1 HP every 2 seconds.</td></tr>
+<tr><td>Ring of Regeneration +3</td><td>35 crystals</td><td>1</td><td>Regenerate 3 HP every 2 seconds.</td></tr>
+<tr><td>Ring of Regeneration +5</td><td>55 crystals</td><td>1</td><td>Regenerate 5 HP every 2 seconds.</td></tr>
+<tr><td>Tome of Experience</td><td>50 crystals + 2 vespene</td><td>use now</td><td>Instantly gain 100 XP.</td></tr>
+<tr><td>Experience Magnifier</td><td>85 crystals + 5 vespene</td><td>1</td><td>1.5x XP for the rest of this life.</td></tr>
+<tr><td>Scroll of Respawning</td><td>15 crystals</td><td>1</td><td>Respawn instantly after you die.</td></tr>
+<tr><td>Ammo Pack</td><td>35 crystals</td><td>1</td><td>Spare ammo every 10 seconds.</td></tr>
+<tr><td>Infinite Ammo</td><td>80 crystals</td><td>use now</td><td>Bottomless magazine for 20 seconds.</td></tr>
+<tr><td>Fuel</td><td>25 crystals + 50 vespene</td><td>1</td><td>Fuel for jetpacks and flying races.</td></tr>
+</table></div>
+<p><b>Energy</b></p>
+<div class="scroll"><table>
+<tr><th>Item</th><th>Cost</th><th>Max</th><th>What it does</th></tr>
+<tr><td>Energy +10</td><td>10 crystals</td><td>use now</td><td>10 energy for 10 crystals.</td></tr>
+<tr><td>Energy +50</td><td>50 crystals</td><td>use now</td><td>50 energy for 50 crystals.</td></tr>
+<tr><td>Energy +100</td><td>100 crystals</td><td>use now</td><td>100 energy for 100 crystals.</td></tr>
+</table></div>
+<h2>Races</h2>
+<p>Each race lists its skills: max points, energy and cooldowns. Ultimates need race level 8 unless the race level is shown. Evolutions are listed under the race they come from.</p>
+<h3>Human Alliance</h3>
+<h4>Human Alliance</h4>
+<p><i>open from the start; max level 16.</i> Noble warriors: tougher, bashes enemies, teleports.</p>
+<ul>
+<li><b>Immunity</b> (max 4): Immune to: shop items (1), explosions (2), extra-damage skills (3), enemy ultimates (4).
+<li><b>Devotion Aura</b> (max 4): +15/26/38/50% health each spawn.
+<li><b>Bash</b> (max 4, 2 energy per use): 15/21/27/32% chance to slow the enemy you hit to half speed for 1s (once every 2s per enemy).
+<li><b>Teleport</b> (ultimate 1, max 4, 80 energy, 2s cooldown): Teleport where you aim, 300/500/800/1500 units (not within 1s of hitting an enemy). Costs 80/60/40/20 energy.
+</ul>
+<h3>Orcish Horde</h3>
+<h4>Orcish Horde</h4>
+<p><i>open from the start; max level 16.</i> Brutal critical strikes, reincarnation, chain lightning.</p>
+<ul>
+<li><b>Acute Strike</b> (max 4, 2 energy per use): 25% chance to deal 40/60/90/120% extra damage.
+<li><b>Acute Grenade</b> (max 4, 2 energy per use): HE grenades: 15% chance to deal 15/30/40/50% extra damage.
+<li><b>Reincarnation</b> (max 4, 10 energy per use): 15/37/59/80% chance to come back right where you died (up to 4 times in a row).
+<li><b>Chain Lightning</b> (ultimate 1, max 4, 30 energy, 2s cooldown): Lightning jumps between up to 4 enemies (300-800 units), hitting each.
+</ul>
+<h3>Night Elf</h3>
+<h4>Night Elf</h4>
+<p><i>open from the start; max level 16.</i> Dodges shots, reflects damage, roots enemies in place.</p>
+<ul>
+<li><b>Evasion</b> (max 4, 1 energy per use): 5/10/15/20% chance to dodge an enemy's hit completely.
+<li><b>Thorns Aura</b> (max 4, 2 energy per use): 10/20/30/40% chance to reflect 10/20/30/40% of the damage you take.
+<li><b>Trueshot Aura</b> (max 4, 1 energy per use): 10/20/30/40% chance to deal 10/20/30/40% extra damage.
+<li><b>Entangling Roots</b> (ultimate 1, max 4, 30 energy, 2s cooldown): Roots every visible enemy within 300/450/650/800 units for 1.5/2/3/4s.
+</ul>
+<h3>Undead Scourge</h3>
+<h4>Undead Scourge</h4>
+<p><i>open from the start; max level 17.</i> Life steal, speed, low gravity, explodes on death.</p>
+<ul>
+<li><b>Vampiric Aura</b> (max 4, 2 energy per use): 60% chance to heal 12/18/24/30% of the damage you deal.
+<li><b>Unholy Aura</b> (max 4): Run 5/10/16/23% faster.
+<li><b>Levitation</b> (max 4): Gravity reduced by 8/27/45/64%.
+<li><b>Suicide Bomber</b> (ultimate 1, max 4, 30 energy): Explode, damaging enemies within 200-350 units. Also goes off at half strength when you die (free).
+<li><b>Summon Necromancer</b> (ultimate 2, max 1, race level 12+, 150 energy, 30s cooldown, can use banked energy): Become a Necromancer until you die.
+</ul>
+<h5>Necromancer</h5>
+<p><i>evolution of Undead Scourge, until you die; max level 17.</i> Undead caster: life steal, crippling hits and Raise Dead.</p>
+<ul>
+<li><b>Vampiric Aura</b> (max 4, 2 energy per use): 60% chance to heal 12/18/24/30% of the damage you deal.
+<li><b>Cripple</b> (max 8, 5 energy per use): 20-48% chance a hit slows the enemy to 60% for 2s.
+<li><b>Novice/Adept/Master Training</b> (max 4): Start each life with 30/60/90/120 more energy.
+<li><b>Unholy Frenzy</b> (ultimate 1, disabled): Fire 50% faster for 10s, but lose 3 HP a second.
+<li><b>Raise Dead</b> (ultimate 2, max 1, race level 6+, 30 energy, 20s cooldown): Bring back your most recently fallen teammate, beside you.
+</ul>
+<h4>UAW</h4>
+<p><i>unlocks at overall level 16; max level 24.</i> The union: better pay, job protection, grappling hook and rope swing.</p>
+<ul>
+<li><b>Inflated Wages</b> (max 4): +10/20/30/40% XP and crystals.
+<li><b>Seniority</b> (max 4): When you die: a chance to come back where you fell, respawn at once, or get a buyout (crystals).
+<li><b>Negotiations</b> (max 4): Every minute, a chance of a bonus (crystals), a raise (XP) or a pay cut (-2 crystals). Better odds with levels.
+<li><b>Work Rules</b> (max 4): +0.5/1/1.5/2 energy per second.
+<li><b>Hook</b> (ultimate 1, max 4, 5 energy): Fire a grappling hook where you aim and get pulled there (400-2000 units). Cooldown 20/15/10/5s.
+<li><b>Swing Shift</b> (ultimate 2, max 4, 5 energy): A rope swing: launch up and forward. Cooldown 20/15/10/3s.
+</ul>
+<h3>Terran</h3>
+<h4>Terran Marine</h4>
+<p><i>unlocks at overall level 16; max level 18.</i> Armored rifleman. Trains into a Marauder or a Firebat.</p>
+<ul>
+<li><b>Depleted U-238 Shells</b> (max 4, 2 energy per use): 25% chance for guns to deal 15/30/40/50% extra damage.
+<li><b>Infantry Armor</b> (max 4): Armor (10-25% of your health) that takes 80% of each hit.
+<li><b>Stimpacks</b> (max 4): Run 5/7/10/13% faster.
+<li><b>Combat Shield</b> (max 4): +10/15/25/30% health each spawn.
+<li><b>Marauder Training</b> (ultimate 3, max 1, race level 10+, 200 energy, 30s cooldown, can use banked energy): Become a Marauder until you die.
+<li><b>Firebat Training</b> (ultimate 4, max 1, 150 energy, 30s cooldown, can use banked energy): Become a Firebat until you die.
+</ul>
+<h5>Terran Firebat</h5>
+<p><i>evolution of Terran Marine, until you die; max level 24.</i> Rebuilt around the molotov: fire-proof suit, burning hits, molotovs on demand.</p>
+<ul>
+<li><b>Infantry Weapons</b> (max 4, 2 energy per use): 25% chance for guns to deal 10-50% extra damage.
+<li><b>CMC-660 Combat Suit</b> (max 4): Fire-proof suit: immune to fire, plus armor (10-75% of your health, takes 70%).
+<li><b>Ultimate Stimpacks</b> (ultimate 3, max 4, race level 4+, 30 energy, 10s cooldown): Fire 50% faster for 2s per level.
+<li><b>Stimpacks</b> (max 4, race level 12+): Run 10/15/20/25% faster.
+<li><b>Viral Plasma</b> (max 4, 1 energy per use): 20/40/60/80% of your hits set the enemy burning (3 dmg/s for 3s).
+<li><b>Perdition Molotovs</b> (ultimate 1, max 4, race level 1+, 8s cooldown): Get a molotov (1-4 per life by level, every 8s).
+</ul>
+<h5>Terran Marauder</h5>
+<p><i>evolution of Terran Marine, until you die; max level 24.</i> Heavy infantry: slowing shells, stimpacks and D-8 charges.</p>
+<ul>
+<li><b>Depleted U-238 Shells</b> (max 4, 2 energy per use): 25% chance for guns to deal 30/40/50/70% extra damage.
+<li><b>Juggernaut Plating</b> (max 4): Armor (10-75% of your health) that takes 80% of each hit.
+<li><b>Ultimate Stimpacks</b> (ultimate 1, max 4, race level 4+, 30 energy, 10s cooldown): Fire 50% faster for 2s per level.
+<li><b>Stimpacks</b> (max 4, race level 12+): Run 10/15/20/25% faster.
+<li><b>Concussive Shells</b> (max 4, race level 6+, 2 energy per use): Your shots slow enemies to 60% speed for 1.5s per level.
+<li><b>D-8 Charge</b> (ultimate 3, max 4, 2s cooldown): Drop a D-8 charge (explodes after 6s, or press again to detonate).
+</ul>
+<h4>Terran Ghost</h4>
+<p><i>unlocks at overall level 32; max level 25; energy starts at 150, max 1000.</i> Cloaked sniper: lockdown, detection and tactical nukes. Becomes a Science Vessel.</p>
+<ul>
+<li><b>Personal Cloaking Device</b> (max 4): Partly invisible; much harder to see while standing still. Firing a gun shows you for 1s.
+<li><b>Lockdown</b> (max 4, 2 energy per use): 15-52% chance a hit freezes the enemy for 1 second.
+<li><b>Ocular Implants</b> (max 4): Reveal cloaked enemies within 300-800 units.
+<li><b>Moebius Reactor</b> (max 4): Start each life with 50/100/150/200 more energy.
+<li><b>Nuclear Launch</b> (ultimate 1, max 4, 300 energy, 60s cooldown, can use banked energy): Call a nuke where you aim. 5s warning, then a huge blast (400-850 units).
+<li><b>Ultimate Lockdown</b> (ultimate 3, max 4, race level 18+, 100 energy, 5s cooldown): Freeze the enemy you aim at for 0.75-3s.
+<li><b>Build Science Vessel</b> (ultimate 4, max 1, race level 16+, 200 energy, 30s cooldown, can use banked energy): Become a Science Vessel until you die.
+</ul>
+<h5>Terran Science Vessel</h5>
+<p><i>evolution of Terran Ghost, until you die; max level 24; energy starts at 30, max 1000.</i> Floating support ship: Defensive Matrix and EMP.</p>
+<ul>
+<li><b>Ship Plating</b> (max 4): Plating (10-75% of your health) that takes 70% of each hit.
+<li><b>Anti-Gravity Lifters</b> (max 4): Gravity reduced by 8/27/45/64%.
+<li><b>Detector</b> (max 4): Reveal cloaked enemies within 300-800 units.
+<li><b>Titan Reactor</b> (max 4, race level 14+): +0.5/1/1.5/2 energy per second.
+<li><b>Defensive Matrix</b> (ultimate 1, max 4, 60 energy, 2s cooldown): A 15s shield on the teammate you aim at (or yourself).
+<li><b>EMP Shockwave</b> (ultimate 2, max 4, race level 1+, 80 energy, 2s cooldown): Visible enemies within 250-1000 units lose their energy and shields, and can't stay cloaked for 10s.
+<li><b>Irradiate</b> (ultimate 3, disabled): Irradiate the enemy you aim at; them and anyone near take 5 dmg/s for 8s.
+</ul>
+<h4>Terran Medic</h4>
+<p><i>unlocks at overall level 32; max level 36.</i> The team's healer: heal beam, healing aura, cleanse, flares and a jetpack.</p>
+<ul>
+<li><b>Infection</b> (max 4, 5 energy per use): 25% chance a hit infects the enemy (2 dmg/s for 5s per level).
+<li><b>Medic Training</b> (ultimate 4, max 4, race level 0+, 20 energy, 4s cooldown): Heal the teammate you aim at for 45/50/55/60 HP (yourself if none).
+<li><b>Light Armor</b> (max 4): Armor (10-40% of your health) that takes 70% of each hit.
+<li><b>Healthkit</b> (max 4): When you die, your nearest teammate within 800 units gets a healthshot.
+<li><b>Regeneration</b> (max 4): Regenerate 0.5/1/1.5/2 HP every second.
+<li><b>Healing Aura</b> (max 4): Heal teammates within 150-600 units 1-4 HP a second.
+<li><b>Restore</b> (ultimate 3, max 4, 20 energy, 5s cooldown): Cleanse teammates within 150-600 units (slows, roots, all damage over time) and stop new slows and roots for 3s.
+<li><b>Optical Flare</b> (ultimate 3, max 4, race level 10+, 30 energy, 2s cooldown): Ultimate 3 (instead of Restore): blind visible enemies within 150-600 units for 3s.
+<li><b>Jetpack</b> (ultimate 1, max 4, race level 12+): Arm the jetpack, then hold jump to fly.
+</ul>
+<h4>Terran Vulture</h4>
+<p><i>unlocks at overall level 32; max level 29.</i> Fast hover-bike: spider mines, tripmines and grenades. Builds a Battlecruiser.</p>
+<ul>
+<li><b>Orbital Depot</b> (max 4): Spare ammo every 10 seconds (more per level).
+<li><b>Ion Thrusters</b> (max 4): Run 15/20/25/30% faster.
+<li><b>Vehicle Plating</b> (max 4): Armor (10-50% of your health) that takes 60% of each hit.
+<li><b>Vehicle Weapons</b> (max 4, 2 energy per use): 15-30% chance to deal 15-50% extra damage.
+<li><b>Spider Mine</b> (ultimate 1, max 4, 3s cooldown): Drop a spider mine that chases enemies (1-4 per life, 3 out at once).
+<li><b>Tripmine</b> (ultimate 2, max 4, 2s cooldown): A laser tripmine on the wall you face (1-4 per life, 3 out at once).
+<li><b>Grenades</b> (ultimate 3, max 4, 2s cooldown): An HE grenade and a flashbang (1-4 times per life).
+<li><b>Build Battlecruiser</b> (ultimate 4, max 1, race level 16+, 300 energy, 60s cooldown, can use banked energy): Become a Battlecruiser until you die.
+</ul>
+<h5>Terran Battlecruiser</h5>
+<p><i>evolution of Terran Vulture, until you die; max level 24; energy starts at 60, max 100.</i> Flying capital ship: Yamato Cannon and Missile Barrage.</p>
+<ul>
+<li><b>Immunity</b> (max 4): Immune to: shop items (1), ultimates (2), slows (3), explosions (4).
+<li><b>Ship Plating</b> (max 4): Heavy plating (5-75% of your health) that takes 50% of each hit.
+<li><b>Ship Weapons</b> (max 4, 2 energy per use): 30-58% chance to deal 15-70% extra damage.
+<li><b>Ship Propulsion</b> (ultimate 2, max 4, race level 0+): Arm the engines, then hold jump to fly (40-120 fuel).
+<li><b>Yamato Cannon</b> (ultimate 3, max 4, 60 energy, 2s cooldown): A huge beam at the enemy you aim at (400-900 units).
+<li><b>Missile Barrage</b> (ultimate 4, max 4, race level 6+, 60 energy, 2s cooldown): Missiles rain where you aim for 5s (250-650 units).
+</ul>
+<h4>Terran Reaper</h4>
+<p><i>unlocks at overall level 48; max level 24.</i> Jetpack raider with stims and D-8 charges.</p>
+<ul>
+<li><b>Infantry Weapons</b> (max 4, 2 energy per use): 25% chance for guns to deal 15-50% extra damage.
+<li><b>Light Armor</b> (max 4): Armor (20-50% of your health) that takes 40% of each hit.
+<li><b>Enhanced Stimpacks</b> (max 4, race level 12+): Fire 2.5/5/7.5/10% faster, always.
+<li><b>Stimpacks</b> (max 4, race level 12+): Run 10/15/20/25% faster.
+<li><b>Jetpack</b> (ultimate 1, max 4): Arm the jetpack, then hold jump to fly (40-90 fuel).
+<li><b>D-8 Charge</b> (ultimate 3, max 4, race level 16+, 2s cooldown): Drop a D-8 charge (explodes after 6s, or press again to detonate).
+</ul>
+<h3>Zerg</h3>
+<h4>Zergling</h4>
+<p><i>unlocks at overall level 16; max level 25.</i> Fast melee swarmer that keeps coming back. Morphs into a Baneling.</p>
+<ul>
+<li><b>Metabolic Boost</b> (max 4): Run 5/10/15/20% faster.
+<li><b>Adrenal Glands</b> (max 4, 2 energy per use): Knife hits do 15/30/40/50% more damage.
+<li><b>Regeneration</b> (max 4): Regenerate 0.5/1/1.5/2 HP every second.
+<li><b>Carapace</b> (max 4): Armor (10-40% of your health) that takes 60% of each hit.
+<li><b>Spawning Pool</b> (max 4, 10 energy per use): 30/50/70/90% chance to come back where you died.
+<li><b>Bloodlust</b> (ultimate 1, max 4, 30 energy, 10s cooldown): For 10s run 20-50% faster and knife for 25-100% more.
+<li><b>Baneling Morph</b> (ultimate 3, max 1, race level 12+, 120 energy, 30s cooldown, can use banked energy): Become a Baneling until you die.
+</ul>
+<h5>Baneling</h5>
+<p><i>evolution of Zergling, until you die; max level 20.</i> Rolling acid bomb: explodes on command or on death.</p>
+<ul>
+<li><b>Centrifugal Hooks</b> (max 4): Speed 70/80/100/110% of normal (60% with no points).
+<li><b>Adrenal Glands</b> (max 4, 2 energy per use): Knife hits do 15-70% more damage.
+<li><b>Roll</b> (ultimate 1, max 4, race level 0+, 20 energy, 12s cooldown): 10 seconds of extra speed.
+<li><b>Explode</b> (ultimate 3, max 4, race level 0+): Ultimate 3: explode (also when you die). Bigger and stronger with levels.
+<li><b>Volatile Burst</b> (max 4, race level 8+): Your explosion also sets enemies on fire.
+</ul>
+<h4>Zerg Omegalisk</h4>
+<p><i>unlocks at overall level 32; max level 25; energy starts at 50, max 500.</i> Blade beast that heals its team and grabs enemies. Evolves into an Ultralisk.</p>
+<ul>
+<li><b>Kaiser Blades</b> (max 4, 2 energy per use): Knife hits do 15-50% more damage.
+<li><b>Regeneration</b> (max 4): Regenerate 0.5/1/1.5/2 HP every second.
+<li><b>Healing Aura</b> (max 4): Heal nearby teammates 1-4 HP/s (300-800 units).
+<li><b>Carapace</b> (max 4): Armor (10-40% of your health) that takes 60% of each hit.
+<li><b>Metasynaptic Node</b> (max 4): +0.5/1/1.5/2 energy per second.
+<li><b>Tentacle</b> (ultimate 1, max 4, 10 energy, 5s cooldown): Grab the enemy you aim at (500-2000 units), pull and hold them 1/2/3/4s.
+<li><b>Evolve Ultralisk</b> (ultimate 3, max 1, race level 14+, 500 energy, 60s cooldown, can use banked energy): Become an Ultralisk until you die.
+</ul>
+<h5>Zerg Ultralisk</h5>
+<p><i>evolution of Zerg Omegalisk, until you die; max level 24.</i> Armored juggernaut: cleaves and charges through everything.</p>
+<ul>
+<li><b>Chitinous Plating</b> (max 4): Heavy armor (10-100% of your health) that takes 90% of each hit.
+<li><b>Anabolic Synthesis</b> (max 4): Speed 85-105% of normal.
+<li><b>Uber Kaiser Blades</b> (max 4, 2 energy per use): Knife hits do 30-80% more damage.
+<li><b>Regeneration</b> (max 4): Regenerate 1-3 HP every second.
+<li><b>Cleave</b> (ultimate 1, max 4, race level 0+, 45 energy, 2s cooldown): Slash everyone around you (150 units) and knock them back.
+<li><b>Charge</b> (ultimate 3, max 4, race level 4+, 200 energy, 20s cooldown, can use banked energy): Charge forward 3.3/4.4/5.3/6s, smashing enemies aside.
+</ul>
+<h4>Zerg Overlord</h4>
+<p><i>unlocks at overall level 32; max level 36; energy starts at 45, max 150.</i> Flying support: heals, resupplies, detects and ensnares.</p>
+<ul>
+<li><b>Pneumatized Carapace</b> (max 4): Gravity reduced by 8/27/45/64%.
+<li><b>Metabolic Boost</b> (max 4): Run 5/10/15/20% faster.
+<li><b>Regeneration</b> (max 4): Regenerate 0.5/1/1.5/2 HP every second.
+<li><b>Healing Aura</b> (max 4): Heal nearby teammates 1-4 HP a second (300-800 units), 1 energy per heal.
+<li><b>Transfusion</b> (max 4): Every 5s, nearby teammates get spare ammo.
+<li><b>Antennae</b> (max 4): Cloaked enemies within 300-800 units are revealed.
+<li><b>Flyer</b> (ultimate 1, max 4): Arm your wings, then hold jump to fly.
+<li><b>Excrete Creep</b> (ultimate 2, max 4, 30 energy, 2s cooldown): Visible enemies within 400-900 units are revealed and slowed to 60% for 10s.
+<li><b>Ventral Sacs</b> (ultimate 3, max 4, 30 energy, 10s cooldown): Pull the nearest teammate (350-750 units) to you.
+</ul>
+<h4>Zerg Defiler</h4>
+<p><i>unlocks at overall level 48; max level 20; energy starts at 45, max 100.</i> Support caster: Dark Swarm shelters allies, Plague rots enemies.</p>
+<ul>
+<li><b>Regeneration</b> (max 4): Regenerate 0.5/1/1.5/2 HP every second.
+<li><b>Carapace</b> (max 4): Armor (10-40% of your health) that takes 60% of each hit.
+<li><b>Consume Enemy</b> (max 4, 2 energy per use): 60% chance to heal 10/18/28/40% of the damage you deal.
+<li><b>Dark Swarm</b> (ultimate 3, max 4, 90 energy, 10s cooldown): A 10s cloud (300-600 units); allies inside take 50% less damage (knives excepted).
+<li><b>Plague</b> (ultimate 1, max 4, 90 energy, 10s cooldown): Every visible enemy in range (400-900) takes 3/6/9/12 damage a second for 4s.
+</ul>
+<h4>Zerg Hydralisk</h4>
+<p><i>unlocks at overall level 48; max level 24.</i> Ranged spine shooter: armored, fast, poisons on demand.</p>
+<ul>
+<li><b>Hardened Carapace</b> (max 4): Armor (10-40% of your health) that takes 80% of each hit.
+<li><b>Regeneration</b> (max 4): Regenerate 0.5/1/1.5/2 HP every second.
+<li><b>Muscular Augments</b> (max 4): Run 10/15/20/25% faster.
+<li><b>Missile Attack</b> (max 4, 2 energy per use): 5/15/25/35% chance to deal 15/30/40/50% extra damage.
+<li><b>Grooved Spines</b> (max 4, 2 energy per use): 10-20% more damage on long shots (over 600 units).
+<li><b>Poisonous Spines</b> (ultimate 1, max 4, 20 energy, 2s cooldown): For 5/10/15/20s your hits poison (4 dmg/s for 4s).
+</ul>
+<h4>Zerg Queen</h4>
+<p><i>unlocks at overall level 100; max level 36; energy starts at 120, max 1000.</i> Flying caster that turns enemies into Broodlings or Infested.</p>
+<ul>
+<li><b>Flyer Carapace</b> (max 4): Armor (10-50% of your health) that takes 40% of each hit.
+<li><b>Pneumatized Carapace</b> (max 4): Run 10/15/20/25% faster.
+<li><b>Regeneration</b> (max 4): Regenerate 0.5/1/1.5/2 HP every second.
+<li><b>Parasite</b> (max 4, 1 energy per use): 15-45% chance a hit marks the enemy: they can't stay cloaked for 10s.
+<li><b>Ensnare</b> (max 4, 3 energy per use): 15-45% chance a hit slows the enemy to 60-90% speed for 5s.
+<li><b>Flyer</b> (ultimate 1, max 4): Arm your wings, then hold jump to fly (40-90 fuel).
+<li><b>Gamete Meiosis</b> (max 4): Start each life with 25/50/75/100 more energy.
+<li><b>Spawn Broodling</b> (ultimate 2, max 4, race level 10+, 90 energy, 30s cooldown, can use banked energy): Turn the enemy you aim at into a Broodling for 10s.
+<li><b>Infest Enemy</b> (ultimate 3, max 4, race level 12+, 180 energy, 30s cooldown, can use banked energy): Turn the enemy you aim at into an Infested for 10s (no guns, explodes).
+</ul>
+<h5>Broodling</h5>
+<p><i>evolution of Zerg Queen, until you die; max level 12.</i> A Queen's victim for 10s: knife only, slowly dying, hurting nearby teammates.</p>
+<ul>
+<li><b>Degeneration</b> (max 4): You lose 2 HP a second. Unavoidable.
+<li><b>Broodling Attack</b> (max 4): Teammates within 300 units lose 2 HP a second. Unavoidable.
+<li><b>Adrenal Glands</b> (max 4, 2 energy per use): Knife hits do 15-65% more damage.
+</ul>
+<h5>Infested</h5>
+<p><i>evolution of Zerg Queen, until you die; max level 8.</i> A Queen's victim for 10s: no weapons, fast, and explodes (hurting everyone near).</p>
+<ul>
+<li><b>Metabolic Boost</b> (max 4): Run up to 11% faster.
+<li><b>Explode</b> (ultimate 1, max 4, race level 0+): Explode, damaging everyone nearby (teammates too). Also on death.
+</ul>
+<h3>Protoss</h3>
+<h4>Protoss Zealot</h4>
+<p><i>unlocks at overall level 16; max level 22.</i> Psi-blade warrior that charges in. Warps into a Dragoon or Stalker.</p>
+<ul>
+<li><b>Immunity</b> (max 4): Immune to: extra-damage skills (1), crystal theft (2), blindness (3), ultimates (4).
+<li><b>Leg Enhancements</b> (max 4): Run 5/10/15/20% faster.
+<li><b>Plasma Shields</b> (max 4): Regenerating shields (10-40% of your health) that take 10-50% of each hit.
+<li><b>Psi-Blades</b> (max 4, 5 energy per use): Knife hits do 15/30/40/50% more damage.
+<li><b>Charge</b> (ultimate 1, max 4, 200 energy, 30s cooldown, can use banked energy): Charge forward 2.6/3.8/4.9/6s, smashing enemies aside.
+<li><b>Summon Dragoon</b> (ultimate 2, max 1, race level 4+, 120 energy, 10s cooldown, can use banked energy): Become a Dragoon until you die.
+<li><b>Summon Stalker</b> (ultimate 4, max 1, race level 12+, 120 energy, 30s cooldown, can use banked energy): Become a Stalker until you die.
+</ul>
+<h5>Protoss Dragoon</h5>
+<p><i>evolution of Protoss Zealot, until you die; max level 21.</i> Shielded walker with Singularity Charge. Warps into a Reaver.</p>
+<ul>
+<li><b>Plasma Shields</b> (max 4): Regenerating shields (5-75% of your health) that take 80% of each hit.
+<li><b>Cybernetic Core</b> (max 4): Speed 80-105% of normal.
+<li><b>Ground Weapons</b> (max 4, 2 energy per use): 5-35% chance to deal 15-70% extra damage.
+<li><b>Immunity</b> (max 4): Immune to: slows (1), shop items (2), ultimates (3), extra-damage skills (4).
+<li><b>Singularity Charge</b> (ultimate 1, max 4, 60 energy, 2s cooldown): For 5/10/15/20s your guns do 25/50/75/100% more damage.
+<li><b>Summon Reaver</b> (ultimate 2, max 1, race level 4+, 80 energy, 10s cooldown, can use banked energy): Become a Reaver until you die.
+</ul>
+<h5>Protoss Reaver</h5>
+<p><i>evolution of Protoss Dragoon, until you die; max level 25.</i> Slow siege unit that launches hunting scarabs.</p>
+<ul>
+<li><b>Plasma Shields</b> (max 4): Regenerating shields (5-75% of your health) that take 80% of each hit.
+<li><b>Cybernetic Core</b> (max 4): Speed 80-105% of normal.
+<li><b>Scarab Attack</b> (max 4, 2 energy per use): 10-40% chance for hits to explode for 15-60% extra damage.
+<li><b>Immunity</b> (max 4): Immune to: slows (1), shop items (2), ultimates (3), extra-damage skills (4).
+<li><b>Reaver Capacity</b> (max 4, race level 4+): Keep 2 more scarabs out per level.
+<li><b>Scarab Velocity</b> (max 4, race level 4+): Scarabs move faster: 500/600/700/800 units a second (400 with no points).
+<li><b>Scarab</b> (ultimate 1, no points needed, race level 0+, 2 energy, 1s cooldown): Launch a scarab that hunts the nearest enemy and explodes.
+<li><b>Argus Scarab</b> (ultimate 2, no points needed, race level 0+, 4 energy, 1s cooldown): A long-range scarab.
+<li><b>Scarab Siege</b> (ultimate 3, disabled): Launch six scarabs at once.
+<li><b>Detonate Scarabs</b> (ultimate 4, max 1, race level 10+): Blow up all your scarabs now.
+</ul>
+<h5>Protoss Stalker</h5>
+<p><i>evolution of Protoss Zealot, until you die; max level 21.</i> Blinking skirmisher. Warps into a Disrupter.</p>
+<ul>
+<li><b>Plasma Shields</b> (max 4): Regenerating shields (5-75% of your health) that take 80% of each hit.
+<li><b>Cybernetic Core</b> (max 4): Speed 80-105% of normal.
+<li><b>Ground Weapons</b> (max 4, 2 energy per use): 5-35% chance to deal 15-70% extra damage.
+<li><b>Immunity</b> (max 4): Immune to: slows (1), shop items (2), ultimates (3), extra-damage skills (4).
+<li><b>Blink</b> (ultimate 1, max 4, 30 energy, 2s cooldown): Teleport where you aim (300-1500 units; not within 1s of hitting an enemy).
+<li><b>Summon Disrupter</b> (ultimate 2, max 1, race level 4+, 120 energy, 30s cooldown, can use banked energy): Become a Disrupter until you die.
+</ul>
+<h5>Protoss Disrupter</h5>
+<p><i>evolution of Protoss Stalker, until you die; max level 36; energy starts at 60, max 200.</i> Battlefield controller: bouncing disruption, Null Void, Guardian Shield, Force Field.</p>
+<ul>
+<li><b>Ground Armor</b> (max 4): Armor (10-50% of your health) that takes 80% of each hit.
+<li><b>Plasma Shields</b> (max 4): Regenerating shields (10-50% of your health) that take 80% of each hit.
+<li><b>Cybernetic Core</b> (max 4): Speed 80-105% of normal.
+<li><b>Ground Weapons</b> (max 4, 2 energy per use): 5-35% chance to deal 25-75% extra damage.
+<li><b>Hallucination</b> (max 4, 2 energy per use): 15-75% chance your hits blind the enemy for 1.5s (once every 4s each).
+<li><b>Molecular Disruption</b> (ultimate 1, max 4, race level 1+, 60 energy, 2s cooldown): A psionic shot that bounces between up to 10 enemies.
+<li><b>Null Void</b> (ultimate 2, max 4, race level 10+, 80 energy, 2s cooldown): Enemies in the void lose energy, shields and cloak.
+<li><b>Guardian Shield</b> (ultimate 3, max 4, 60 energy, 2s cooldown): You and teammates within 400 units get a 10s barrier.
+<li><b>Force Field</b> (ultimate 4, max 4, 100 energy, 5s cooldown): Visible enemies within 300 units are frozen for 0.75s per level.
+</ul>
+<h4>Protoss Chimera</h4>
+<p><i>unlocks at overall level 32; max level 20; energy starts at 45, max 150.</i> Field commander: cloaks nearby allies, detects enemies, seeds phase mines.</p>
+<ul>
+<li><b>Scarab Attack</b> (max 4, 2 energy per use): 10-40% chance for hits to explode for 15-50% extra damage.
+<li><b>Distortion Field</b> (max 4): Teammates within 150-500 units are partly cloaked.
+<li><b>Sensor Array</b> (max 4): Reveal cloaked enemies within 300-800 units.
+<li><b>Plasma Shields</b> (max 4): Regenerating shields (15-50% of your health) that take 50% of each hit.
+<li><b>Phase Mine</b> (ultimate 2, max 4, race level 1+, 1s cooldown): Drop a phase mine that hunts enemies (2-20 at once).
+<li><b>Phase Explode</b> (ultimate 3, disabled): Set off all your phase mines.
+</ul>
+<h4>Protoss High Templar</h4>
+<p><i>unlocks at overall level 48; max level 29.</i> Psionic caster: Psionic Storm, Feedback and Hallucination. Merges into an Archon.</p>
+<ul>
+<li><b>Immunity</b> (max 4): Immune to: detection (1), slows (2), crystal theft (3), ultimates (4).
+<li><b>Levitation</b> (max 4): Gravity reduced by 8/27/45/64%.
+<li><b>Feedback</b> (max 4, 2 energy per use): 15-50% chance to send half of a hit back to the attacker.
+<li><b>Hallucination</b> (max 4, 2 energy per use): 15-50% chance your hits blind the enemy for 1.5s (once every 4s each).
+<li><b>Psionic Storm</b> (ultimate 1, max 4, 60 energy, 2s cooldown): A 5s storm around you (250-650 units) that burns enemies inside.
+<li><b>Plasma Shields</b> (max 4): Regenerating shields (10-40% of your health) that take 10-50% of each hit.
+<li><b>Khaydarin Amulet</b> (max 4): Start each life with 25/50/75/100 more energy.
+<li><b>Summon Archon</b> (ultimate 2, max 1, race level 12+, 300 energy, 30s cooldown, can use banked energy): Merge into an Archon until you die.
+</ul>
+<h5>Protoss Archon</h5>
+<p><i>evolution of Protoss High Templar, until you die; max level 28; energy starts at 45, max 100.</i> Pure psionic energy: huge shields, Psionic Bolt, Feedback and Psionic Rage.</p>
+<ul>
+<li><b>Psionic Shockwave</b> (max 4, 2 energy per use): 25% chance for any hit to deal 20-100% extra damage.
+<li><b>Plasma Shields</b> (max 4): Huge regenerating shields (10-100% of your health) that take 80% of each hit.
+<li><b>Feedback</b> (max 4, 2 energy per use): 10-50% chance to send half of a hit back to the attacker.
+<li><b>Levitation</b> (max 4): Gravity 8% lower with no points; 27/45/64/74% lower with points.
+<li><b>Hallucination</b> (max 4, 2 energy per use): 15-50% chance your hits blind the enemy for 1.5s (once every 4s each).
+<li><b>Psionic Bolt</b> (ultimate 1, max 4, race level 4+, 45 energy, 10s cooldown): Blast the enemy you aim at and anyone near them.
+<li><b>Ultimate Feedback</b> (ultimate 2, disabled): Drain all the energy of the enemy you aim at; they take 60% of it as damage (at least 12).
+<li><b>Psionic Rage</b> (ultimate 3, max 4, race level 12+, 180 energy, 20 vespene, 100s cooldown, can use banked energy): Invulnerable and 50% stronger for 1.5s per level.
+</ul>
+<h4>Protoss Dark Templar</h4>
+<p><i>unlocks at overall level 64; max level 25.</i> Invisible assassin: cloak, psi-blades and blink. Merges into a Dark Archon.</p>
+<ul>
+<li><b>Immunity</b> (max 4): Immune to: being uncloaked (1), extra-damage skills (2), ultimates (3), shop items (4).
+<li><b>Leg Enhancements</b> (max 4): Run 5/10/15/20% faster.
+<li><b>Plasma Shields</b> (max 4): Regenerating shields (10-40% of your health) that take 10-50% of each hit.
+<li><b>Cloaking</b> (max 4): Partly invisible; much harder to see while standing still. Firing a gun shows you for 1s.
+<li><b>Psi-Blades</b> (max 4, 5 energy per use): Knife hits do 15/30/40/50% more damage.
+<li><b>Blink</b> (ultimate 1, max 4, 30 energy, 2s cooldown): Teleport where you aim (300-1500 units; not within 1s of hitting an enemy).
+<li><b>Summon Dark Archon</b> (ultimate 3, max 1, race level 10+, 300 energy, 30s cooldown, can use banked energy): Merge into a Dark Archon until you die.
+</ul>
+<h5>Protoss Dark Archon</h5>
+<p><i>evolution of Protoss Dark Templar, until you die; max level 16; energy starts at 45, max 100.</i> Maelstrom roots and reveals whole groups; brutal blades.</p>
+<ul>
+<li><b>Psionic Shockwave</b> (max 4, 2 energy per use): 25% chance for any hit to deal 20-100% extra damage.
+<li><b>Plasma Shields</b> (max 4): Huge regenerating shields (10-100% of your health) that take 90% of each hit.
+<li><b>Psi-Blades</b> (max 4, 2 energy per use): Knife hits do 15-70% more damage.
+<li><b>Maelstrom</b> (ultimate 1, max 4, race level 0+, 45 energy, 2s cooldown): Every visible enemy within 400-900 units is revealed and rooted for 1s per level.
+<li><b>Ultimate Feedback</b> (ultimate 3, disabled): Drain all the energy of the enemy you aim at; they take 60% of it as damage (at least 12).
+</ul>
+<h4>Protoss Phoenix</h4>
+<p><i>unlocks at overall level 64; max level 20.</i> Fast flyer that lifts enemies helplessly into the air.</p>
+<ul>
+<li><b>Air Weapons</b> (max 4, 2 energy per use): 15-30% chance for guns to deal 15-50% extra damage.
+<li><b>Plasma Shields</b> (max 4): Regenerating shields (10-40% of your health) that take 80% of each hit.
+<li><b>Gravitic Thrusters</b> (max 4): Run 10/15/20/25% faster.
+<li><b>Gravitic Drive</b> (ultimate 1, max 4): Arm the drive, then hold jump to fly.
+<li><b>Graviton Beam</b> (ultimate 2, max 4, 30 energy, 2s cooldown): Lift the enemy you aim at into the air for 1/2/3/4s.
+</ul>
+</div>
+</main>
+<footer>
+  <p>Crazy's Cavern &middot; community game servers &middot; <a href="https://steamcommunity.com/groups/crazyscavern" rel="noopener">Steam group</a></p>
+  <p class="dim">SourceCraft is a fan-made mod. StarCraft and Warcraft are trademarks of Blizzard Entertainment; Team Fortress 2, Counter-Strike 2 and Left 4 Dead 2 are Valve's. Not affiliated with either.</p>
+</footer>
+<script>
+document.querySelectorAll('button.copy').forEach(function (b) {
+  b.addEventListener('click', function () {
+    var t = 'connect ' + b.dataset.addr;
+    (navigator.clipboard ? navigator.clipboard.writeText(t) : Promise.reject()).then(function () {
+      b.textContent = 'copied'; setTimeout(function () { b.textContent = 'copy'; }, 1500);
+    }, function () { window.prompt('Copy this, then paste it in the game console (~):', t); });
+  });
+});
+</script>
+</body></html>
