@@ -1,0 +1,77 @@
+{
+ "updated": "2026-11-07T13:21:34Z",
+ "servers": {
+  "tf2-eu": {
+   "ok": true,
+   "humans": 0,
+   "max": 24,
+   "map": "cp_degrootkeep"
+  },
+  "tf2-na": {
+   "ok": true,
+   "humans": 0,
+   "max": 24,
+   "map": "ctf_doublecross"
+  },
+  "tf2-mvm": {
+   "ok": true,
+   "humans": 0,
+   "max": 6,
+   "map": "mvm_ghost_town"
+  },
+  "tf2-trade": {
+   "ok": true,
+   "humans": 0,
+   "max": 32,
+   "map": "trade_plaza_2"
+  },
+  "tf2-na5x": {
+   "ok": true,
+   "humans": 0,
+   "max": 24,
+   "map": "koth_harvest_final"
+  },
+  "cs2-eu": {
+   "ok": true,
+   "humans": 0,
+   "max": 20,
+   "map": "de_dust2"
+  },
+  "l4d2-na-normal": {
+   "ok": true,
+   "humans": 0,
+   "max": 8,
+   "map": "c5m5_bridge"
+  },
+  "l4d2-na-advanced": {
+   "ok": true,
+   "humans": 0,
+   "max": 8,
+   "map": "c13m4_cutthroatcreek"
+  },
+  "l4d2-na-normal2": {
+   "ok": true,
+   "humans": 0,
+   "max": 16,
+   "map": "c4m4_milltown_b"
+  },
+  "l4d2-na-6plus": {
+   "ok": true,
+   "humans": 0,
+   "max": 8,
+   "map": "c4m2_sugarmill_a"
+  },
+  "l4d2-eu-normal": {
+   "ok": true,
+   "humans": 0,
+   "max": 8,
+   "map": "c5m5_bridge"
+  },
+  "l4d2-eu-6plus": {
+   "ok": true,
+   "humans": 0,
+   "max": 8,
+   "map": "c1m4_atrium"
+  }
+ }
+}
