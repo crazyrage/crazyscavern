@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SCP: Secret Laboratory - player guide and servers | Crazy&#x27;s Cavern</title>
+<meta name="description" content="Crazy&#x27;s Cavern SCP: Secret Laboratory servers: Vanilla+ with a respawn timer, SCP swap and more, and SourceCraft with races, levels, skills and a shop. Commands, races and the shop.">
+<link rel="canonical" href="https://crazyrage.github.io/crazyscavern/scpsl/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Crazy's Cavern">
+<meta property="og:title" content="SCP: Secret Laboratory - player guide and servers | Crazy&#x27;s Cavern">
+<meta property="og:description" content="Crazy&#x27;s Cavern SCP: Secret Laboratory servers: Vanilla+ with a respawn timer, SCP swap and more, and SourceCraft with races, levels, skills and a shop. Commands, races and the shop.">
+<meta property="og:url" content="https://crazyrage.github.io/crazyscavern/scpsl/">
+<meta name="theme-color" content="#1c1f1d">
+<link rel="icon" href="../favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600&family=VT323&display=swap">
+<link rel="stylesheet" href="../style.css">
+</head><body>
+<header class="term">
+  <div class="bar"><span class="lights" aria-hidden="true"><i></i><i></i><i></i></span><span class="prompt">crazyscavern@sourcecraft:~/scpsl/</span></div>
+  <nav><a href="../index.html">home</a><a href="../index.html#servers">servers</a><a href="../tf2/">tf2</a><a href="../cs2/">cs2</a><a href="../l4d2/">l4d2</a><a href="../scpsl/" class=on>scp:sl</a><a href="https://steamcommunity.com/groups/crazyscavern" rel="noopener">steam group</a></nav>
+</header>
+<main>
+<h1>SCP: Secret Laboratory</h1>
+<p class="lead">&gt; Two servers: Vanilla+, the plain game with extras, and SourceCraft, with races, levels, skills and a shop.</p>
+<h2>&gt;&gt; SERVERS</h2>
+<p class="dim">In the game's server list, search <b>Crazy's Cavern</b>.</p>
+<div class="scroll"><table class="servers"><thead><tr><th>server</th><th>address</th><th>what it is</th></tr></thead><tbody><tr><td><b>SCP:SL Vanilla+</b></td><td><code>51.79.64.167:7777</code></td><td>The plain game with extras: respawn timer, SCP swap, skeleton spawn, useful hints, a waiting line when full. No RPG. 30 slots</td></tr><tr><td><b>SCP:SL SourceCraft</b></td><td><code>51.79.64.167:7779</code></td><td>17 SourceCraft races, levels, skills and a shop. 25 slots. In testing: XP and crystals x7, levels may be wiped later</td></tr></tbody></table></div>
+<div class="guide">
+<h2>&gt;&gt; START HERE</h2>
+<p>We run two servers. <b>Vanilla+</b> (30 slots) is the plain game with a few extras. <b>SourceCraft</b> (25 slots) adds races, levels, skills and a shop. Find both in the game's server list: search <b>Crazy's Cavern</b>.</p>
+<p>There is no text chat in SCP:SL, so everything here happens in two places: the <b>console</b> (press <code>~</code>; our commands start with a dot, like <code>.servers</code>) and the <b>settings</b> (Esc &gt; Settings &gt; Server-specific).</p>
+
+<h2>&gt;&gt; ON BOTH SERVERS</h2>
+<div class="scroll"><table><tr><th>WHAT</th><th>HOW IT WORKS</th></tr>
+<tr><td><b>Respawn timer</b></td><td>While you're dead you see when the next Nine-Tailed Fox and Chaos waves come, plus the round time, players and generators.</td></tr>
+<tr><td><b>SCP swap</b></td><td>In the first 60 seconds two SCP players can trade roles: <code>.scpswap 173</code> asks whoever is SCP-173 (names work too: peanut, doctor, shyguy, dog...), <code>.scpswap accept</code> or <code>decline</code> answers. Only between players.</td></tr>
+<tr><td><b>Skeleton</b></td><td>SCP-3114 can start a round all year, never as the only SCP and always rarer than any other SCP.</td></tr>
+<tr><td><b>Tesla gates</b></td><td>Gates don't fire for MTF, guards, scientists or SCP-049. Class-D, Chaos and the other SCPs set them off as usual.</td></tr>
+<tr><td><b>SCP-049 talks</b></td><td>SCP-049 can talk to the humans near him: Left Alt (or <code>.talk</code>) switches between them and the SCP chat.</td></tr>
+<tr><td><b>Spectating</b></td><td>The dead can't watch Class-D and scientists, so nobody can give away where they hide, until 3 of them are left.</td></tr>
+<tr><td><b>Leavers</b></td><td>When an SCP player leaves mid-round, a spectator takes over that SCP where it was, with its health.</td></tr>
+<tr><td><b>Full server</b></td><td>Your game waits in line and gets in when a slot opens; no need to keep clicking Connect.</td></tr>
+<tr><td><b>Hints</b></td><td>Short notes on screen: your kills, grenade damage, item timers, who's on your team, a round summary at the end. Switch each group off under Esc &gt; Settings &gt; Server-specific.</td></tr>
+</table></div>
+<div class="scroll"><table><tr><th>CONSOLE (~)</th><th>WHAT IT DOES</th></tr>
+<tr><td><b>.stats</b></td><td>Your time played, kills, deaths, damage, escapes and fastest escape</td></tr>
+<tr><td><b>.top</b></td><td>Top 10 by kills; <code>.top time</code>, <code>.top damage</code>, <code>.top escape</code> (fastest escapes)</td></tr>
+<tr><td><b>.scpswap</b></td><td>Swap SCPs (see above); <code>.scpswap list</code> shows who is which SCP</td></tr>
+<tr><td><b>.talk</b></td><td>SCP-049: talk to nearby humans or back to SCP chat</td></tr>
+<tr><td><b>.servers</b></td><td>Every Crazy's Cavern server, SCP:SL, TF2, CS2 and L4D2</td></tr>
+<tr><td><b>.discord</b> / <b>.steam</b> / <b>.donate</b></td><td>Our Discord / the Steam group / how to support the servers</td></tr>
+</table></div>
+
+<h2>&gt;&gt; SOURCECRAFT</h2>
+<p class="note"><b>Still in testing:</b> XP and crystals are x7 for now and count once 2 players are on. Levels may be wiped once balancing and tuning are done. Feedback is welcome on our Discord.</p>
+<p>You get a <b>race</b>, earn <b>XP</b> to level it, put skill points into its <b>skills</b> and spend <b>crystals</b> in the shop. Humans and SCPs have separate races: you keep one of each.</p>
+<p><b>The menu:</b> Esc &gt; Settings &gt; Server-specific &gt; <b>SourceCraft</b>, with the pages Me, Races, Skills, Shop and Help. Set your <b>ultimate keys</b> at the bottom of that page: no key is set until you pick one. While alive, your energy and crystals show at the bottom left.</p>
+<div class="scroll"><table><tr><th>CONSOLE (~)</th><th>WHAT IT DOES</th></tr>
+<tr><td><b>.sc</b></td><td>Your race, level, XP, energy and crystals, and this list</td></tr>
+<tr><td><b>.race</b></td><td>The races with their unlock levels; <code>.race &lt;name&gt;</code> picks one</td></tr>
+<tr><td><b>.skills</b></td><td>Your race's skills; <code>.skill 1 4</code> puts four points into skill 1, <code>.resetskills</code> takes them all back</td></tr>
+<tr><td><b>.ult 1</b> ... <b>.ult 4</b></td><td>Use an ultimate (the keys in the menu do the same)</td></tr>
+<tr><td><b>.shop</b> / <b>.buy</b></td><td>The shop; <code>.buy boots</code></td></tr>
+<tr><td><b>.sctop</b></td><td>The ten highest overall levels</td></tr>
+</table></div>
+
+<h3>Which race you play</h3>
+<div class="scroll"><table><tr><th>YOU ARE</th><th>YOU PLAY</th></tr>
+<tr><td>Class-D, scientist, guard, MTF, Chaos</td><td>Your human race (a random starter race until you pick one)</td></tr>
+<tr><td>An SCP</td><td>Your SCP race: Zergling or Zealot to begin with, even before level 16</td></tr>
+<tr><td>A zombie</td><td>Always Zergling, and only a zombie can morph into a Baneling</td></tr>
+<tr><td>SCP-079</td><td>Any race you've unlocked; no skills, it only earns XP for that race</td></tr>
+</table></div>
+<p><b>Changing race:</b> one change a round counts, in its first 60 seconds. A later change takes effect next round. Between rounds, change as often as you like. Alive, you pick for the side you're on; dead or in the lobby, for either side.</p>
+
+<h3>XP, levels and crystals</h3>
+<ul>
+<li><b>XP</b> for kills (20 to 63 by the victim's race level, more if they're above your overall level), killing an SCP (kill XP x5), damage you take off an SCP, escaping (100), and being alive on the winning side at round end (50).</li>
+<li>Your first kill on a new race takes it to level 1. Each level gives a <b>skill point</b>. <b>Ultimates</b> unlock at race level 8.</li>
+<li><b>Overall level</b> is all your race levels added up; it unlocks more races.</li>
+<li><b>Crystals:</b> 50 to start, 2 per kill, 10 per SCP kill, 5 per escape, at most 100.</li>
+<li><b>Energy</b> pays for skills. Energy left when you die is banked for the big ultimates.</li>
+<li>Escaping, or a new role from staff, keeps your items and energy; only a death or a new round ends them.</li>
+<li>The game's instant kills stay as they are; only Night Elf's Evasion can dodge one.</li>
+</ul>
+
+<h3>Races for humans</h3>
+<div class="scroll"><table><tr><th>RACE</th><th>UNLOCKS AT</th><th>SKILLS (ultimates in bold)</th></tr>
+<tr><td><b>Human Alliance</b></td><td>start</td><td>Immunity, Devotion Aura, Bash, <b>Teleport</b></td></tr>
+<tr><td><b>Night Elf</b></td><td>start</td><td>Evasion, Thorns Aura, Trueshot Aura, <b>Entangling Roots</b></td></tr>
+<tr><td><b>Orcish Horde</b></td><td>start</td><td>Acute Strike, Acute Grenade, <b>Chain Lightning</b></td></tr>
+<tr><td><b>Undead Scourge</b></td><td>start</td><td>Vampiric Aura, Unholy Aura, Levitation, <b>Suicide Bomber</b></td></tr>
+<tr><td><b>UAW</b></td><td>overall 16</td><td>Inflated Wages, Seniority, Negotiations, Work Rules, <b>Lockout</b></td></tr>
+<tr><td><b>Zerg Overlord</b></td><td>overall 32</td><td>Pneumatized Carapace, Metabolic Boost, Regeneration, Healing Aura, Transfusion, Antennae, <b>Excrete Creep</b>, <b>Ventral Sacs</b></td></tr>
+<tr><td><b>Terran Reaper</b></td><td>overall 48</td><td>Infantry Weapons, Light Armor, Stimpacks, <b>Jump Jets</b>, <b>D-8 Charge</b></td></tr>
+<tr><td><b>Terran Science Vessel</b></td><td>overall 48</td><td>Ship Plating, Anti-Gravity Lifters, Detector, Titan Reactor, <b>Defensive Matrix</b>, <b>EMP Shockwave</b>, <b>Irradiate</b></td></tr>
+<tr><td><b>Protoss Phoenix</b></td><td>overall 64</td><td>Air Weapons, Plasma Shields, Gravitic Thrusters, <b>Gravitic Drive</b>, <b>Graviton Beam</b></td></tr>
+<tr><td><b>Zerg Queen</b></td><td>overall 100</td><td>Flyer Carapace, Pneumatized Carapace, Regeneration, Parasite, Ensnare, Gamete Meiosis, <b>Spawn Broodling</b>, <b>Infest Enemy</b></td></tr>
+</table></div>
+
+<h3>Races for SCPs</h3>
+<div class="scroll"><table><tr><th>RACE</th><th>UNLOCKS AT</th><th>SKILLS (ultimates in bold)</th></tr>
+<tr><td><b>Zergling</b></td><td>overall 16 (given free before)</td><td>Metabolic Boost, Adrenal Glands, Regeneration, Carapace, <b>Bloodlust</b>, <b>Baneling Morph</b> (zombies only)</td></tr>
+<tr><td><b>Protoss Zealot</b></td><td>overall 16 (given free before)</td><td>Immunity, Leg Enhancements, Plasma Shields, Psi-Blades, <b>Charge</b></td></tr>
+<tr><td><b>Zerg Omegalisk</b></td><td>overall 32</td><td>Kaiser Blades, Regeneration, Healing Aura, Carapace, Metasynaptic Node, <b>Tentacle</b>, <b>Evolve Ultralisk</b></td></tr>
+<tr><td><b>Protoss Dark Templar</b></td><td>overall 64</td><td>Immunity, Leg Enhancements, Plasma Shields, Cloaking, Psi-Blades, <b>Blink</b>, <b>Summon Dark Archon</b></td></tr>
+<tr><td><b>Baneling</b></td><td>from Zergling, as a zombie</td><td>Centrifugal Hooks, Adrenal Glands, Volatile Burst, <b>Roll</b>, <b>Explode</b></td></tr>
+<tr><td><b>Zerg Ultralisk</b></td><td>from Omegalisk</td><td>Chitinous Plating, Anabolic Synthesis, Uber Kaiser Blades, Regeneration, <b>Cleave</b>, <b>Charge</b></td></tr>
+<tr><td><b>Protoss Dark Archon</b></td><td>from Dark Templar</td><td>Psionic Shockwave, Plasma Shields, Psi-Blades, <b>Maelstrom</b></td></tr>
+</table></div>
+<p class="note">The menu's Skills page and <code>.skills</code> show every skill's numbers. Against an SCP that kills outright, damage skills do nothing; speed, armor, shields, regeneration, cloaking and the ultimates work on every SCP.</p>
+
+<h3>The shop</h3>
+<p>Items last one life (an Ankh brings them back once). Keycards, guns and SCP items are never for sale. An SCP can buy the mod's items but no game items; SCP-079 can't buy.</p>
+<div class="scroll"><table><tr><th>KIND</th><th>ITEMS (crystals)</th></tr>
+<tr><td><b>Protective</b></td><td>Ankh 60, Necklace of Immunity 15, Flack Jacket 10 (skill blasts only), Antidote 60, Potion of Restoration 75, Lubricant 30, Lockbox 10</td></tr>
+<tr><td><b>Defensive</b></td><td>Mask of Death 10</td></tr>
+<tr><td><b>Combative</b></td><td>Claws of Attack 60, Orb of Frost 40, Orb of Fire 55, Sack of Looting 65</td></tr>
+<tr><td><b>Enhancement</b></td><td>Boots of Speed 55, Sock of the Feather 45, Periapt of Health 40, Ring of Regeneration +1 / +3 / +5 for 15 / 35 / 55, Tome of Experience 50, Experience Magnifier 85, Ammo Pack 35</td></tr>
+<tr><td><b>Energy</b></td><td>+10 / +50 / +100 energy for 10 / 50 / 100</td></tr>
+<tr><td><b>Supplies</b></td><td>Flashlight 15, Radio 15, Painkillers 30, First Aid Kit 50, Adrenaline 50, Light Armor 70</td></tr>
+</table></div>
+
+<h3>Do Not Track</h3>
+<p>If you have Do Not Track on in the game, your SourceCraft progress lasts for that visit only. Type <code>.sc optin</code> to have it kept, <code>.sc optout</code> to have it deleted.</p>
+</div>
+</main>
+<footer>
+  <p>Crazy's Cavern &middot; community game servers &middot; <a href="https://steamcommunity.com/groups/crazyscavern" rel="noopener">Steam group</a></p>
+  <p class="dim">SourceCraft is a fan-made mod. StarCraft and Warcraft are trademarks of Blizzard Entertainment; Team Fortress 2, Counter-Strike 2 and Left 4 Dead 2 are Valve's. Not affiliated with either.</p>
+</footer>
+<script>
+document.querySelectorAll('button.copy').forEach(function (b) {
+  b.addEventListener('click', function () {
+    var t = 'connect ' + b.dataset.addr;
+    (navigator.clipboard ? navigator.clipboard.writeText(t) : Promise.reject()).then(function () {
+      b.textContent = 'copied'; setTimeout(function () { b.textContent = 'copy'; }, 1500);
+    }, function () { window.prompt('Copy this, then paste it in the game console (~):', t); });
+  });
+});
+// CC 2026-11-06: players on now (people, not bots), from status.json that a GitHub job writes (about every 10 minutes since 2026-11-25; GitHub often runs it later)
+(function () {
+  var cells = document.querySelectorAll('td.pl[data-sid]');
+  if (!cells.length) return;
+  var API = 'https://api.github.com/repos/crazyrage/crazyscavern/contents/status.json?ref=status';
+  var RAW = 'https://raw.githubusercontent.com/crazyrage/crazyscavern/status/status.json';
+  function show(doc) {
+    var age = Math.max(0, Math.round((Date.now() - Date.parse(doc.updated)) / 60000));
+    cells.forEach(function (c) {
+      var s = doc.servers[c.dataset.sid];
+      if (!s) { c.textContent = '-'; return; }
+      if (!s.ok) { c.innerHTML = '<span class="dim" title="No answer at the last check (changing map?)">no reply</span>'; return; }
+      c.innerHTML = s.humans > 0 ? '<b class="on">' + s.humans + '</b>' : '<span class="dim">0</span>';
+      c.title = s.humans + ' of ' + s.max + ' slots, map ' + s.map;
+    });
+    document.querySelectorAll('[data-status-note]').forEach(function (n) {
+      n.textContent = 'on now = people, bots not counted. Checked ' + (age < 1 ? 'just now' : age + ' min ago') +
+        (age > 30 ? ' (the check is running late)' : '') + '.';
+    });
+  }
+  function load() {
+    fetch(API, { cache: 'no-store' })
+      .then(function (r) { if (!r.ok) throw r.status; return r.json(); })
+      .then(function (j) { return JSON.parse(atob(j.content)); })
+      .catch(function () { return fetch(RAW + '?t=' + Date.now()).then(function (r) { return r.json(); }); })
+      .then(show)
+      .catch(function () { cells.forEach(function (c) { c.textContent = '-'; }); });
+  }
+  load();
+  setInterval(load, 120000);
+})();
+</script>
+</body></html>
