@@ -18,7 +18,7 @@
 </head><body>
 <header class="term">
   <div class="bar"><span class="lights" aria-hidden="true"><i></i><i></i><i></i></span><span class="prompt">crazyscavern@sourcecraft:~/404.html</span></div>
-  <nav><a href="https://crazyrage.github.io/crazyscavern/index.html">home</a><a href="https://crazyrage.github.io/crazyscavern/index.html#servers">servers</a><a href="https://crazyrage.github.io/crazyscavern/tf2/">tf2</a><a href="https://crazyrage.github.io/crazyscavern/cs2/">cs2</a><a href="https://crazyrage.github.io/crazyscavern/l4d2/">l4d2</a><a href="https://steamcommunity.com/groups/crazyscavern" rel="noopener">steam group</a></nav>
+  <nav><a href="https://crazyrage.github.io/crazyscavern/index.html">home</a><a href="https://crazyrage.github.io/crazyscavern/index.html#servers">servers</a><a href="https://crazyrage.github.io/crazyscavern/tf2/">tf2</a><a href="https://crazyrage.github.io/crazyscavern/cs2/">cs2</a><a href="https://crazyrage.github.io/crazyscavern/l4d2/">l4d2</a><a href="https://crazyrage.github.io/crazyscavern/index.html#servers-scpsl">scp:sl</a><a href="https://steamcommunity.com/groups/crazyscavern" rel="noopener">steam group</a></nav>
 </header>
 <main>
 <h1>404</h1><p class="lead">&gt; no such page. <a href="https://crazyrage.github.io/crazyscavern/">back home</a></p>
@@ -36,7 +36,7 @@ document.querySelectorAll('button.copy').forEach(function (b) {
     }, function () { window.prompt('Copy this, then paste it in the game console (~):', t); });
   });
 });
-// CC 2026-11-06: players on now (people, not bots), from status.json that a GitHub job writes every 5 minutes
+// CC 2026-11-06: players on now (people, not bots), from status.json that a GitHub job writes (about every 10 minutes since 2026-11-25; GitHub often runs it later)
 (function () {
   var cells = document.querySelectorAll('td.pl[data-sid]');
   if (!cells.length) return;
@@ -53,7 +53,7 @@ document.querySelectorAll('button.copy').forEach(function (b) {
     });
     document.querySelectorAll('[data-status-note]').forEach(function (n) {
       n.textContent = 'on now = people, bots not counted. Checked ' + (age < 1 ? 'just now' : age + ' min ago') +
-        (age > 30 ? ' (the check is running late)' : '') + '; refreshes every 5 minutes.';
+        (age > 30 ? ' (the check is running late)' : '') + '.';
     });
   }
   function load() {

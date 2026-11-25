@@ -84,6 +84,8 @@ th { background: var(--panel-2); color: var(--green); font-weight: 600; text-tra
 tbody tr:nth-child(even) td, tr.alt td { background: #222624; }
 table.servers td { white-space: nowrap; }
 table.servers td:nth-child(3), table.servers td:nth-child(4) { white-space: normal; min-width: 160px; }
+/* CC 2026-11-25: the L4D2 table was wider than the page (join buttons cut off) */
+table.servers td:nth-child(1), table.servers td:nth-child(5) { white-space: normal; }
 td.game { color: var(--green); }
 
 /* guide content from the per-game guides */

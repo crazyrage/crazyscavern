@@ -18,7 +18,7 @@
 </head><body>
 <header class="term">
   <div class="bar"><span class="lights" aria-hidden="true"><i></i><i></i><i></i></span><span class="prompt">crazyscavern@sourcecraft:~/join/tf2-trade.html</span></div>
-  <nav><a href="../index.html">home</a><a href="../index.html#servers" class=on>servers</a><a href="../tf2/">tf2</a><a href="../cs2/">cs2</a><a href="../l4d2/">l4d2</a><a href="https://steamcommunity.com/groups/crazyscavern" rel="noopener">steam group</a></nav>
+  <nav><a href="../index.html">home</a><a href="../index.html#servers" class=on>servers</a><a href="../tf2/">tf2</a><a href="../cs2/">cs2</a><a href="../l4d2/">l4d2</a><a href="../index.html#servers-scpsl">scp:sl</a><a href="https://steamcommunity.com/groups/crazyscavern" rel="noopener">steam group</a></nav>
 </header>
 <main>
 <section class="join"><h1>TF2 TRADE</h1><p class="lead">&gt; Opening Steam to join <b>TF2 TRADE</b> (Trade maps, 15x XP sandbox)...</p><p><a class="btn big" href="steam://connect/148.113.183.190:27017">join now</a></p><p>Nothing happened? Open the Team Fortress 2 console (<code>~</code>) and type<br><code>connect 148.113.183.190:27017</code> <button class="copy" type="button" data-addr="148.113.183.190:27017">copy</button></p><p><a href="../tf2/">TF2 guide</a> &middot; <a href="../index.html#servers">all servers</a></p></section><script>setTimeout(function () { window.location.href = "steam://connect/148.113.183.190:27017"; }, 300);</script>
@@ -36,7 +36,7 @@ document.querySelectorAll('button.copy').forEach(function (b) {
     }, function () { window.prompt('Copy this, then paste it in the game console (~):', t); });
   });
 });
-// CC 2026-11-06: players on now (people, not bots), from status.json that a GitHub job writes every 5 minutes
+// CC 2026-11-06: players on now (people, not bots), from status.json that a GitHub job writes (about every 10 minutes since 2026-11-25; GitHub often runs it later)
 (function () {
   var cells = document.querySelectorAll('td.pl[data-sid]');
   if (!cells.length) return;
@@ -53,7 +53,7 @@ document.querySelectorAll('button.copy').forEach(function (b) {
     });
     document.querySelectorAll('[data-status-note]').forEach(function (n) {
       n.textContent = 'on now = people, bots not counted. Checked ' + (age < 1 ? 'just now' : age + ' min ago') +
-        (age > 30 ? ' (the check is running late)' : '') + '; refreshes every 5 minutes.';
+        (age > 30 ? ' (the check is running late)' : '') + '.';
     });
   }
   function load() {

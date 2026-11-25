@@ -3,12 +3,12 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>SourceCraft CS2 - player guide and servers | Crazy&#x27;s Cavern</title>
-<meta name="description" content="SourceCraft RPG mod for Counter-Strike 2: Respawn deathmatch with 22 races and 20 evolutions. The bots play SourceCraft too: they have races, levels, items and ultimates. Servers, commands, races and the shop.">
+<meta name="description" content="SourceCraft RPG mod for Counter-Strike 2: Respawn deathmatch with 21 races and 15 evolutions. The bots play SourceCraft too: they have races, levels, items and ultimates. Servers, commands, races and the shop.">
 <link rel="canonical" href="https://crazyrage.github.io/crazyscavern/cs2/">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Crazy's Cavern">
 <meta property="og:title" content="SourceCraft CS2 - player guide and servers | Crazy&#x27;s Cavern">
-<meta property="og:description" content="SourceCraft RPG mod for Counter-Strike 2: Respawn deathmatch with 22 races and 20 evolutions. The bots play SourceCraft too: they have races, levels, items and ultimates. Servers, commands, races and the shop.">
+<meta property="og:description" content="SourceCraft RPG mod for Counter-Strike 2: Respawn deathmatch with 21 races and 15 evolutions. The bots play SourceCraft too: they have races, levels, items and ultimates. Servers, commands, races and the shop.">
 <meta property="og:url" content="https://crazyrage.github.io/crazyscavern/cs2/">
 <meta name="theme-color" content="#1c1f1d">
 <link rel="icon" href="../favicon.svg" type="image/svg+xml">
@@ -18,11 +18,11 @@
 </head><body>
 <header class="term">
   <div class="bar"><span class="lights" aria-hidden="true"><i></i><i></i><i></i></span><span class="prompt">crazyscavern@sourcecraft:~/cs2/</span></div>
-  <nav><a href="../index.html">home</a><a href="../index.html#servers">servers</a><a href="../tf2/">tf2</a><a href="../cs2/" class=on>cs2</a><a href="../l4d2/">l4d2</a><a href="https://steamcommunity.com/groups/crazyscavern" rel="noopener">steam group</a></nav>
+  <nav><a href="../index.html">home</a><a href="../index.html#servers">servers</a><a href="../tf2/">tf2</a><a href="../cs2/" class=on>cs2</a><a href="../l4d2/">l4d2</a><a href="../index.html#servers-scpsl">scp:sl</a><a href="https://steamcommunity.com/groups/crazyscavern" rel="noopener">steam group</a></nav>
 </header>
 <main>
 <h1>SourceCraft for Counter-Strike 2</h1>
-<p class="lead">&gt; Respawn deathmatch with 22 races and 20 evolutions. The bots play SourceCraft too: they have races, levels, items and ultimates.</p>
+<p class="lead">&gt; Respawn deathmatch with 21 races and 15 evolutions. The bots play SourceCraft too: they have races, levels, items and ultimates.</p>
 <h2>&gt;&gt; SERVERS</h2>
 <p class="dim">CS2 keeps its own levels.</p>
 <p class="dim small" data-status-note>on now = people on the server, bots not counted.</p>
@@ -103,15 +103,16 @@
 <li><b>Ultimates</b> are used with <code>css_ultimate1</code> to <code>css_ultimate4</code> (bind them). They need race level 8 unless the race list says otherwise.
 <li><b>One ultimate per slot:</b> some races offer two ultimates on the same key; you can learn only one of them.
 <li>Cooldowns keep running while you're dead, so dying doesn't reset them.
+<li>After a root, freeze or hold ends, that player can't be rooted again for 3 seconds.
 </ul>
 <h3>Energy</h3>
 <ul>
-<li>You spawn with your race's starting energy (usually 30) and gain 1 per second, up to its max (usually 100).
+<li>You spawn with your race's starting energy (usually 30) and gain 1 per second (Protoss 2), up to its max (usually 100).
 <li>Ultimates and some passives cost energy.
 <li><b>Banked energy:</b> when you die, energy above your race's starting amount is banked for that race (up to 1,000; shown in brackets on the readout). Some big ultimates can draw from it.
 </ul>
 <h3>Evolutions</h3>
-<p>Some ultimates turn you into another race until you die (Zealot into Dragoon, Marine into Firebat, and so on). An evolution has its own levels and skill points; when you die you are back to your normal race. Evolutions aren't in the race menu: you reach them through their parent race. There are 21 races to pick and 15 evolutions.</p>
+<p>Some ultimates turn you into another race until you die (Zealot into Dragoon, Marine into Firebat, and so on). An evolution has its own levels and skill points; when you die you are back to your normal race. Evolutions aren't in the race menu: you reach them through their parent race. There are 21 races to pick and 15 evolutions. Two of those, Broodling and Infested, are what a Zerg Queen turns an enemy into for 10 seconds.</p>
 <h3>Crystals, vespene and the shop</h3>
 <ul>
 <li><b>Crystals:</b> 2 per kill or assist (you can hold up to 100).
@@ -124,19 +125,19 @@
 <li><b>No classes:</b> every race works with any CS2 weapon.
 <li><b>Everyone has 100 HP</b>, so flat skill damage from TF2 (Chain Lightning, Suicide Bomber...) is scaled down.
 <li>Some skills were rebuilt for CS2: Firebat is built around molotovs, Vulture throws real grenades, Reaver scarabs and mines are custom.
-<li><b>Not ported:</b> the building races (Protoss Probe, Phase Prism, Carrier; Zerg Drone, Hive Queen) and Zerg Lurker. A few skills that needed TF2 (Uber charges, boss summons, mind control...) were cut.
+<li><b>Not ported:</b> the building races (Protoss Probe, Phase Prism, Carrier; Zerg Drone, Hive Queen), Terran SCV and Raven, Protoss Immortal and Collosus, Zerg Overseer, Infestor and Lurker. A few skills that needed TF2 (Uber charges, boss summons, mind control...) were cut.
 </ul>
 <h2>Shop (44 items)</h2>
 <p><b>Protective</b></p>
 <div class="scroll"><table>
 <tr><th>Item</th><th>Cost</th><th>Max</th><th>What it does</th></tr>
-<tr><td>Blinders</td><td>free</td><td>1</td><td>Hallucinations become plain blindness.</td></tr>
+<tr><td>Blinders</td><td>free</td><td>1</td><td>No effect at the moment (hallucinations are already plain blindness).</td></tr>
 <tr><td>Ankh of Reincarnation</td><td>60 crystals + 2 vespene</td><td>1</td><td>If you die, you get your shop items back next life.</td></tr>
 <tr><td>Necklace of Immunity</td><td>15 crystals</td><td>1</td><td>Immune to enemy ultimates.</td></tr>
 <tr><td>Flack Jacket</td><td>10 crystals</td><td>1</td><td>Immune to explosives.</td></tr>
 <tr><td>Antibiotic</td><td>5 crystals</td><td>10</td><td>Cures (or prevents one) infection.</td></tr>
 <tr><td>Antivenom</td><td>30 crystals</td><td>1</td><td>Cures and prevents poisoning.</td></tr>
-<tr><td>Antirad</td><td>30 crystals</td><td>1</td><td>Cures and prevents radiation.</td></tr>
+<tr><td>Antirad</td><td>30 crystals</td><td>1</td><td>Cures and prevents radiation (nothing causes radiation at the moment).</td></tr>
 <tr><td>Antidote</td><td>60 crystals</td><td>1</td><td>Cures and prevents infection, radiation and poison.</td></tr>
 <tr><td>Potion of Restoration</td><td>75 crystals</td><td>10</td><td>Cures slows and roots; nothing can slow you for 10 seconds.</td></tr>
 <tr><td>Goggles</td><td>10 crystals</td><td>1</td><td>Immune to blindness and hallucinations.</td></tr>
@@ -161,11 +162,11 @@
 <tr><td>Orb of Frost</td><td>40 crystals</td><td>1</td><td>Enemies you hit are slowed to half speed for 5s.</td></tr>
 <tr><td>Orb of Fire</td><td>55 crystals</td><td>1</td><td>Enemies you hit burn for 5s (once every 10s each).</td></tr>
 <tr><td>Silver Ammo</td><td>20 crystals</td><td>1</td><td>Enemies you kill can't reincarnate.</td></tr>
-<tr><td>Silver Ankh</td><td>30 crystals</td><td>1</td><td>Silver Ammo that you keep until it stops a reincarnation.</td></tr>
+<tr><td>Silver Ankh</td><td>30 crystals</td><td>1</td><td>Silver Ammo that is used up on your first enemy kill.</td></tr>
 <tr><td>Sack of Looting</td><td>65 crystals</td><td>1</td><td>55-85% chance to loot 25-50% of a victim's crystals (better with the knife).</td></tr>
 <tr><td>Mole</td><td>75 crystals</td><td>1</td><td>Next spawn, tunnel into the enemy spawn.</td></tr>
-<tr><td>Mine</td><td>35 crystals</td><td>5</td><td>A proximity mine to plant (type 'mine'). Up to 5.</td></tr>
-<tr><td>Tripmine</td><td>60 crystals + 5 vespene</td><td>5</td><td>A laser tripmine for a wall (type 'tripmine'). Up to 5.</td></tr>
+<tr><td>Mine</td><td>35 crystals</td><td>5</td><td>A proximity mine to plant (type <code>!mine</code>). Carry up to 5, 3 out at once.</td></tr>
+<tr><td>Tripmine</td><td>60 crystals + 5 vespene</td><td>5</td><td>A laser tripmine for a wall (type <code>!tripmine</code>). Carry up to 5, 3 out at once.</td></tr>
 <tr><td>Flaming Gloves of Warmth</td><td>65 crystals + 25 vespene</td><td>1</td><td>A fresh HE grenade every 20 seconds.</td></tr>
 </table></div>
 <p><b>Enhancement</b></p>
@@ -435,14 +436,14 @@
 <li><b>Infest Enemy</b> (ultimate 3, max 4, race level 12+, 180 energy, 30s cooldown, can use banked energy): Turn the enemy you aim at into an Infested for 10s (no guns, explodes).
 </ul>
 <h5>Broodling</h5>
-<p><i>evolution of Zerg Queen, until you die; max level 12.</i> A Queen's victim for 10s: knife only, slowly dying, hurting nearby teammates.</p>
+<p><i>what a Zerg Queen turns an enemy into; max level 12.</i> A Queen's victim for 10s: knife only, slowly dying, hurting nearby teammates.</p>
 <ul>
 <li><b>Degeneration</b> (max 4): You lose 2 HP a second. Unavoidable.
 <li><b>Broodling Attack</b> (max 4): Teammates within 300 units lose 2 HP a second. Unavoidable.
 <li><b>Adrenal Glands</b> (max 4, 2 energy per use): Knife hits do 15-65% more damage.
 </ul>
 <h5>Infested</h5>
-<p><i>evolution of Zerg Queen, until you die; max level 8.</i> A Queen's victim for 10s: no weapons, fast, and explodes (hurting everyone near).</p>
+<p><i>what a Zerg Queen turns an enemy into; max level 8.</i> A Queen's victim for 10s: no weapons, fast, and explodes (hurting everyone near).</p>
 <ul>
 <li><b>Metabolic Boost</b> (max 4): Run up to 11% faster.
 <li><b>Explode</b> (ultimate 1, max 4, race level 0+): Explode, damaging everyone nearby (teammates too). Also on death.
@@ -584,7 +585,7 @@ document.querySelectorAll('button.copy').forEach(function (b) {
     }, function () { window.prompt('Copy this, then paste it in the game console (~):', t); });
   });
 });
-// CC 2026-11-06: players on now (people, not bots), from status.json that a GitHub job writes every 5 minutes
+// CC 2026-11-06: players on now (people, not bots), from status.json that a GitHub job writes (about every 10 minutes since 2026-11-25; GitHub often runs it later)
 (function () {
   var cells = document.querySelectorAll('td.pl[data-sid]');
   if (!cells.length) return;
@@ -601,7 +602,7 @@ document.querySelectorAll('button.copy').forEach(function (b) {
     });
     document.querySelectorAll('[data-status-note]').forEach(function (n) {
       n.textContent = 'on now = people, bots not counted. Checked ' + (age < 1 ? 'just now' : age + ' min ago') +
-        (age > 30 ? ' (the check is running late)' : '') + '; refreshes every 5 minutes.';
+        (age > 30 ? ' (the check is running late)' : '') + '.';
     });
   }
   function load() {
